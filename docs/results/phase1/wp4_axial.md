@@ -59,7 +59,7 @@ and ≤ 30° of direction.
 | 400 | 0.48 | 0.70 | 0.72 | −0.25 | 0.38 | 0.43 |
 | 800 | 0.57 | 0.82 | 0.79 | −0.18 | 0.48 | 0.53 |
 
-Read only as a pipeline check (the map is the depthmapX test map, not a city), but the pattern is
+Read only as a pipeline check (the map is the depthmapX test map rather than a city), but the pattern is
 the one to look for in the cities:
 
 - **Axial R3 tracks angular NAIN at 800 m (ρ 0.82) better than axial Rn does (0.57).** Three
@@ -68,7 +68,7 @@ the one to look for in the cities:
   long straight lines count as one step regardless of length, so a long peripheral line can be
   globally integrated while metrically remote.
 - **Axial choice agrees weakly with angular NACH** (0.38–0.53): topological shortest paths have
-  many ties (nuance 4) and count line changes, not turns.
+  many ties (nuance 4) and count line changes rather than turns.
 - Barnsbury intelligibility r = 0.54 (r² 0.29), synergy r = 0.72–0.76.
 
 ## City runs (9 Oct 2026, tol 8 m, angle 30°)
@@ -97,19 +97,19 @@ S4 vs the ladder, interior streets, Spearman ρ (c10dp; c0 in brackets):
 Provisional reading (pending the coverage diagnostic below):
 
 1. **Generated lines are 3–4× shorter than hand-drawn axial lines** (median 40–80 m vs 178 m) and
-   near one per street. They behave as a line-based topological analysis of the centrelines, not as
-   a fewest-line axial map.
+   near one per street. They behave as a line-based topological analysis of the centrelines rather than
+   as a fewest-line axial map.
 2. **Intelligibility is near zero in both cities (r 0.02–0.15)**, synergy 0.15–0.33. The city
    difference is smaller than the cleaning difference (Mumbai interior intelligibility 0.02 at
    c10dp, 0.15 at c0), and both are far below the hand-drawn Barnsbury map (0.54).
-3. **Tolerance moves the map, not the ranking.** tol 4 to 16 m: lines 51k to 29k, mean connectivity
+3. **Tolerance moves the map and leaves the ranking.** tol 4 to 16 m: lines 51k to 29k, mean connectivity
    4.10 to 5.38, intelligibility 0.12 to 0.14; every ladder ρ moves by ≤ 0.05.
 4. **Axial choice is the bridge between the representations** (ρ 0.6–0.8 with angular NACH at
    every radius, both cities); axial integration Rn is not (0.1–0.45).
 5. **City contrast in global axial integration vs metric closeness:** Copenhagen rises to 0.68 at
    2 km; Mumbai island stays at −0.06 to 0.17. The island city is a long peninsula, so Rn depth is
    set by position along it (cf. WP3: global measures follow map shape and position).
-6. The 6–13% connectivity mismatch on c10dp was duplicate streets, not depthmapX (see below).
+6. The 6–13% connectivity mismatch on c10dp was duplicate streets rather than depthmapX (see below).
 
 ## Barnsbury: OSM-generated vs hand-drawn (first run)
 
@@ -122,7 +122,7 @@ Provisional reading (pending the coverage diagnostic below):
 **Coverage diagnostic (`11_axial_diag.py coverage`): no offset; the maps differ in content and
 line placement.**
 
-- Offset scan: best shift (0, −1 m), recall within 5 m 0.247 to 0.249. Not a datum/grid shift.
+- Offset scan: best shift (0, −1 m), recall within 5 m 0.247 to 0.249. This rules out a datum/grid shift.
 - Distance from reference samples to the nearest OSM centreline: 25% within 5 m, 56% within 15 m,
   75% within 25 m, 95% within 50 m. Hand-drawn axial lines run through open space (corner to
   corner, across squares, straight through gentle bends), typically 10–30 m off the centreline.
@@ -155,7 +155,7 @@ line placement.**
 **Conclusion for S4.** An axial map generated from OSM centrelines is a separate representation.
 It does not stand in for hand-drawn axial analysis (ρ ≤ 0.28 on Barnsbury). It relates more
 closely to the angular segment rung (axial choice vs NACH ρ 0.6–0.8 in both cities) than to the
-axial map it imitates. City S4 results are reported as "centreline line-map" results, not as
+axial map it imitates. City S4 results are reported as "centreline line-map" results rather than as
 axial-map results. A like-for-like axial comparison needs hand-drawn lines (P2 sample tile with a
 written protocol).
 
@@ -211,7 +211,7 @@ city, much less than S3.
 
 ## Limits
 
-- Not a fewest-line map; no unlinks for bridges and flyovers (Mumbai has many; Project 2 may add
+- A line map rather than a fewest-line map; no unlinks for bridges and flyovers (Mumbai has many; Project 2 may add
   an unlink list from OSM `bridge`/`tunnel` tags).
 - Extension adds connections; `tol` and stroke angle change the map and are reported.
 - Six interior streets of ~1 cm (degenerate geometry) get no S4 value.

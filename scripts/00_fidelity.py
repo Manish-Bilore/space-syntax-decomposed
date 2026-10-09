@@ -6,7 +6,7 @@
 `--lines` is a Ref,x1,y1,x2,y2 CSV (depthmapX's own test data ships Barnsbury, London).
 The lines are run as an axial map and as a segment map (axial -> segment, depthmapX default).
 Our code is fed depthmapX's exported connection lists, so any remaining difference is in the
-measure definitions, not in graph construction. Writes reports/fidelity_<name>.md and CSVs.
+measure definitions rather than graph construction. Writes reports/fidelity_<name>.md and CSVs.
 """
 from __future__ import annotations
 
@@ -127,7 +127,7 @@ def main() -> None:
     f = lambda v: f"{v:.6g}" if isinstance(v, float) else str(v)  # noqa: E731
     md = [f"# Fidelity report: {args.name}", "",
           "Our reimplementation vs depthmapX (reference). Our code is fed depthmapX's exported",
-          "connection lists, so differences are in measure definitions, not graph construction.",
+          "connection lists, so differences are in measure definitions rather than graph construction.",
           "`share_within_tol` = share of features with relative error <= 1e-5.", "",
           f"## Axial map ({ax_x['lines']} lines, {ax_x['components']} components)", "",
           ax_tab.to_markdown(index=False, floatfmt=".6g"), "",

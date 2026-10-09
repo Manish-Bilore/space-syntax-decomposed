@@ -284,7 +284,7 @@ map (ρ 0.95–0.99). Fed OSM, it does not:
 | streets only | 13.0 | .39 / .84 | 1,782 | .27 | .28 |
 
 - No coordinate offset (shift scan optimum 0, −1 m).
-- Hand-drawn lines sit 10–30 m off centrelines; a third follow open space that is not a street.
+- Hand-drawn lines sit 10–30 m off centrelines; a third follow open space off the street network.
 - ρ stays 0.04–0.28 for every measure, input, tolerance and matching radius.
 
 S4 vs angular ladder, interior streets, cleaned (raw):
@@ -297,7 +297,7 @@ S4 vs angular ladder, interior streets, cleaned (raw):
 | | 2000 | .30 (.44) | .55 (.61) | .13 (.17) | .70 (.78) |
 
 - Axial choice tracks NACH (0.6–0.8); axial integration does not (0.1–0.45).
-- Global axial integration tracks metric closeness in Copenhagen (0.68 at 2 km), not in the Mumbai peninsula (0.13): position again.
+- Global axial integration tracks metric closeness in Copenhagen (0.68 at 2 km) and barely in the Mumbai peninsula (0.13): position again.
 - Intelligibility is near zero in both cities; cleaning moves it more than the city.
 - Tolerance 4 to 16 m: lines −43%, every ladder ρ within 0.05.
 - depthmapX drops coincident duplicate lines; the generator now merges them.
@@ -309,7 +309,7 @@ S4 vs angular ladder, interior streets, cleaned (raw):
 
 **Space Syntax practice**
 
-- NAIN is a modelling decision, not a rescaling; test integration findings under NC²/TD or harmonic closeness.
+- NAIN is a modelling decision rather than a rescaling; test integration findings under NC²/TD or harmonic closeness.
 - Base findings that must survive representation, engine or cleaning on choice/NACH.
 - Report tulip bins, tie-breaking and choice counting.
 - Generated axial maps are not axial maps.
@@ -318,7 +318,7 @@ S4 vs angular ladder, interior streets, cleaned (raw):
 **Network analysis practice**
 
 - Destub after consolidation; report tolerance, stub handling and median segment length.
-- Compare cities by network km per km², not segment counts.
+- Compare cities by network km per km² rather than segment counts.
 - Report the cityseer radius set (results at one radius depend on the others requested).
 
 **Comparing cities**: compare at matched neighbourhood scale or full distributions; city means hide most variation.
@@ -342,7 +342,7 @@ S4 vs angular ladder, interior streets, cleaned (raw):
 
 # Limits
 
-- No movement data: methods compared, not validated (WP5 Copenhagen counts; Dharavi gate counts in Project 2).
+- No movement data: methods compared with each other rather than validated (WP5 Copenhagen counts; Dharavi gate counts in Project 2).
 - Mumbai: formal network only.
 - One cleaning pipeline (OSMnx), one SS engine (depthmapX), one network engine (cityseer).
 - S4 is generated; one hand-drawn reference (London).

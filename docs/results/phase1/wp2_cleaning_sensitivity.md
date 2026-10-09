@@ -17,7 +17,7 @@ Run 7 Oct 2026; radius set 400–2000 m; interior segments.
 | Network km per km² | 25.5 | 23.0 | 22.6 | 16.1 | 14.5 | 14.4 |
 | Straight pieces per street | 2.1 | 3.5 | 4.3 | 2.3 | 3.5 | 4.2 |
 
-- **Segment count is not a stable property of a city.** One cleaning parameter moves
+- **Segment count is an unstable property of a city.** One cleaning parameter moves
   Copenhagen's segment density by 4.2× and Mumbai's by 2.4×.
 - **The Copenhagen : Mumbai ratio of segment density runs from 2.6 (0 m) to 1.5 (20 m).** The
   Phase 0 statement "half the segment density" holds only at 10 m.
@@ -117,7 +117,7 @@ test (`--destub`).
   pavements and dual carriageways; consolidation distorts geometry. The findings that survive
   both are the ones to stand on (finding 1).
 - **For engine comparisons, use raw topology**, where no geometry has been edited.
-- **Quote network length per km², not segment counts**, when comparing cities.
+- **Quote network length per km² rather than segment counts**, when comparing cities.
 - Network cleaning is a sixth design choice in the ladder, as large as angular cost for
   betweenness. That is a result for the paper, and it sharpens Project 2: adding informal lanes
   is a change to the network of the same kind, so its effect should be read against this

@@ -104,3 +104,15 @@ a.ss-card .ss-go { color: var(--ss-accent); font-size: .9rem; margin-top: 12px; 
   #quarto-content > .ss-section { padding-top: 64px; }
   .ss-crop { padding: 8px 8px 0; border-radius: 16px; max-height: 420px; }
 }
+
+/* In short */
+.ss-brief { max-width: 760px; margin: 0 auto; text-align: left; }
+.ss-brief .ss-eyebrow { text-align: center; margin-bottom: 14px; }
+.ss-brief p { font-size: 1.12rem; line-height: 1.6; color: var(--ss-text); margin: 0 0 14px; }
+.ss-brief p + p { color: var(--ss-text2); }
+
+/* Ladder bullets */
+.ss-rung ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; }
+.ss-rung li { font-size: .8rem; line-height: 1.4; color: var(--ss-text); padding-left: 10px; position: relative; }
+.ss-rung li::before { content: ""; position: absolute; left: 0; top: .55em; width: 4px; height: 4px; border-radius: 50%; background: var(--ss-accent); }
+.ss-rung li span { display: block; font-size: .66rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ss-text2); }

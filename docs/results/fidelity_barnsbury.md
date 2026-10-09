@@ -1,7 +1,7 @@
 # Fidelity report: barnsbury
 
 Our reimplementation vs depthmapX (reference). Our code is fed depthmapX's exported
-connection lists, so differences are in measure definitions, not graph construction.
+connection lists, so differences are in measure definitions rather than graph construction.
 `share_within_tol` = share of features with relative error <= 1e-5.
 
 ## Axial map (1100 lines, 9 components)

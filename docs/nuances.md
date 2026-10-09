@@ -13,10 +13,10 @@ London: 1,100 axial lines, 5,459 segments).
 1. **Node count includes the root.** `k` in MD, RA and the D-value is the number of lines
    *including* the line itself. RA = 2(MD − 1)/(k − 2). Getting this off by one shifts every
    integration value. *Barnsbury: all depth/integration columns match to ~1e-7.*
-2. **Undefined, not infinite.** If a line reaches everything in one step (MD = 1), RA = 0 and
+2. **Undefined rather than infinite.** If a line reaches everything in one step (MD = 1), RA = 0 and
    integration is undefined; depthmapX writes −1. Treat as missing, never as a large value.
 3. **Local radius means depth ≤ r**, and the D-value uses the node count *within* the radius.
-   R3 integration is therefore a different normalisation per line, not a scaled-down Rn.
+   R3 integration is therefore a different normalisation per line rather than a scaled-down Rn.
 4. **Axial choice depends on a random seed.** depthmapX picks one shortest path per pair by
    expanding the BFS frontier in random order. Total choice is fixed (each ordered pair at depth
    d contributes d − 1), but its allocation across tied routes is not.
@@ -57,7 +57,7 @@ London: 1,100 axial lines, 5,459 segments).
     at R400, −2.4% at R800, +0.2% at R1200 and +11.2% at radius n. Reproducing its rule gives
     exact agreement for 99.1–100% of segments at every radius (residual from 32-bit float metric
     depths).* Ranks are almost unaffected (ρ > 0.999), so this matters for absolute values and
-    for NACH, not for which streets come out on top.
+    for NACH rather than for which streets come out on top.
 
 ## Graph construction (before any measure)
 
@@ -97,7 +97,7 @@ OSM walk networks, radii 400–2000 m).
     20 m changes Copenhagen's segment count 4.2× and drops cityseer–depthmapX agreement from
     0.90–0.99 to 0.54–0.92. NAIN's reordering and the near-zero end-to-end closeness agreement
     at 400 m survive every setting. Details: `reports/phase1/wp2_cleaning_sensitivity.md`.
-23. **Compare cities by network length per km², not segment counts.** The Copenhagen : Mumbai
+23. **Compare cities by network length per km² rather than segment counts.** The Copenhagen : Mumbai
     segment-density ratio runs 1.5–2.6× with consolidation; the length ratio stays 1.57–1.58×.
 24. **Consolidation appends stubs, and the engines read them differently.** osmnx keeps each
     street's line and adds a straight stub to the merged junction point. cityseer joins streets
@@ -122,15 +122,15 @@ OSM walk networks, radii 400–2000 m).
 
 ## Axial maps (S4)
 
-29. **A generated axial map is not a fewest-line map.** Lines are built from centrelines (natural
+29. **A generated axial map differs from a fewest-line map.** Lines are built from centrelines (natural
     streets, Douglas-Peucker at tolerance `tol`, ends extended by `tol + 1` m so lines meeting at a
-    junction cross). Line count is set by stroke curvature, not by the fewest-line criterion, and
+    junction cross). Line count is set by stroke curvature rather than by the fewest-line criterion, and
     depthmapX analyses the lines as given. Report `tol` and the stroke angle with every S4 result.
 30. **Extension buys connections.** Ends must be extended for lines that meet at a junction to
     cross, but the extension also reaches nearby streets. *Barnsbury self-check: mean
     connectivity 4.00 in the reference, 4.14 at tol 4 m, 4.29 at tol 16 m, with the same lines.*
     Connectivity and choice degrade first (ρ 0.98 to 0.97 and 0.96 to 0.95); integration least.
-31. **Intelligibility and synergy are properties of a line set**, computed over lines, not
+31. **Intelligibility and synergy are properties of a line set**, computed over lines rather than
     streets. Carried to streets (length-weighted), axial values repeat along every street a line
     covers; per-street correlations with the ladder therefore weight long lines by the number of
     streets they span. (`reports/phase1/wp4_axial.md`)

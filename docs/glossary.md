@@ -23,7 +23,7 @@ Short definitions for quick lookup. Full definitions with formulas are in
 | **depthmapX** | Open-source SS software (UCL); the reference engine here (S3, S4). |
 | **Destubbing** | Removing consolidation stubs so streets run straight to the merged junction. |
 | **Dual (segment) graph** | Streets are nodes; streets sharing a junction are linked. |
-| **Generated axial map** | Axial lines produced from street centrelines (natural streets, straightened, extended); S4 here. Not a fewest-line map. |
+| **Generated axial map** | Axial lines produced from street centrelines (natural streets, straightened, extended); S4 here. A line map rather than a fewest-line map. |
 | **Integration (HH)** | Axial closeness: D-value / RA. Higher = fewer line changes to everywhere. |
 | **Integration (angular)** | NC² / TD on the angular segment map (depthmapX ≥ 10). |
 | **Intelligibility** | Correlation between connectivity and global integration: how well local cues predict global position. |

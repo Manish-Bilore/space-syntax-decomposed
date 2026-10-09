@@ -31,7 +31,7 @@ The two engines read those stubs differently (origin: one arm of the dual carria
 So consolidation does not add one error; it perturbs the two engines in different directions,
 which is what lowers their agreement.
 
-This is one synthetic junction. It establishes the mechanism, not its size on real networks.
+This is one synthetic junction. It establishes the mechanism rather than its size on real networks.
 
 ## Fix
 
@@ -58,7 +58,7 @@ all of them and 22% of the straight pieces in both cities. (The 20 m networks sh
 by this count, 8.5% and 16.3%, only because their stubs can be up to 20 m long and the count
 stops at 10 m; rerun with `--max-len 20` for that row.)
 
-### Destubbing recovers part of the engine agreement, not all
+### Destubbing recovers part of the engine agreement
 
 cityseer to depthmapX, ρ at 400 / 800 / 1200 / 2000 m:
 

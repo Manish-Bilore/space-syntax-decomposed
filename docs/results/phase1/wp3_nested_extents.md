@@ -35,7 +35,7 @@ for NAIN and NACH at 400, 800 and 2000 m and radius n.
 
 This behaves as expected: radius-bounded values reach ρ = 1.00 once the surround is at least the
 radius; global NAIN keeps moving as the map grows; clipping at the boundary is the worst case for
-every measure. It is a test of the code, not a result about Mumbai.
+every measure. It is a test of the code rather than a result about Mumbai.
 
 ## Result: Mumbai (8–9 Oct 2026)
 

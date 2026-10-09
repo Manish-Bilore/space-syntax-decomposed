@@ -79,13 +79,13 @@ the "without informal lanes" case. Measuring that omission is Project 2.
   unrelated at 400 m in both cities (ρ ≈ 0).
 - **Normalisation matters most; the closeness formula least.** Harmonic vs NC²/TD agree at
   ρ ≈ 0.98, while NC²/TD to NAIN drops to 0.44–0.53 at 400 m. The exponent on NC sets how
-  much network density counts, so choosing NAIN is a substantive decision, not a rescaling.
+  much network density counts, so choosing NAIN is a substantive decision rather than a rescaling.
 - **Engine disagreement has two causes.** At 10 m junction consolidation cityseer and depthmapX
   agree at only 0.67–0.90. About half of that gap comes from stubs that consolidation appends
   at merged junctions. The rest follows segment length relative to the radius: the engines
   draw the edge of a catchment differently, which matters when segments are long compared with
   the radius (Phase 1 WP2–2c). Replacing curved streets with straight chords raises NAIN/NACH
-  agreement by 0.04–0.11, because depthmapX counts straight pieces, not streets.
+  agreement by 0.04–0.11, because depthmapX counts straight pieces rather than streets.
 - **The cities differ in where divergence sits.** Metric vs angular cost changes Mumbai less
   than Copenhagen; the engine and normalisation steps change it more; end-to-end betweenness
   agreement is lower (0.39–0.52 vs 0.57–0.65).

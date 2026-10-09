@@ -64,7 +64,7 @@ that omission does is Project 2.
    NC²/TD agree at ρ ≈ 0.98 in both cities. NC²/TD to NAIN is the largest single step for
    closeness at local radii (ρ 0.44–0.53 at 400 m). NC is the segment count inside the radius,
    so the exponent on NC decides how much network density is rewarded. Choosing integration
-   or NAIN is a substantive decision about density, not a cosmetic rescaling.
+   or NAIN is a substantive decision about density rather than a cosmetic rescaling.
 3. **Engine disagreement has two causes (revised after Phase 1 WP2–2c).** cityseer and
    depthmapX agree more as the radius grows in both cities (Copenhagen .79 to .90; Mumbai
    .67 to .86). (a) Junction consolidation appends stubs that the engines read differently;
@@ -79,7 +79,7 @@ that omission does is Project 2.
 5. **The cities differ in where the divergence sits.** Metric vs angular cost changes Mumbai's
    rankings less than Copenhagen's (closeness .84–.91 vs .75–.83), while the engine and
    normalisation steps change Mumbai's more, and end-to-end betweenness agreement is lower
-   (.39–.52 vs .57–.65). A hypothesis to test in Phase 1, not yet a result: Mumbai's mapped
+   (.39–.52 vs .57–.65). A hypothesis to test in Phase 1 rather than a result yet: Mumbai's mapped
    network is dominated by long arterial roads, where least-angle and shortest routes
    coincide, and is sparse inside blocks, where catchment conventions bite.
 6. **cityseer's angular results depend on the radius set requested.** Runs are deterministic

@@ -85,7 +85,7 @@ Maps: `a12_tiles_*`.
   (angular cost up), depthmapX counts them as pieces (NC up). Removing stubs recovers about half
   of the lost agreement; the rest follows **median segment length ÷ radius** (rank correlation
   −0.96 across 20 runs, both cities). Merging dual carriageways does not change it.
-- Compare cities by network length per km² (ratio 1.57–1.58 at every setting), not by segment
+- Compare cities by network length per km² (ratio 1.57–1.58 at every setting) rather than by segment
   counts (ratio 1.5–2.6 depending on cleaning).
 
 Maps: `a11_cleaning_*` (same window, raw vs cleaned); `figures/fig6`, `fig7`.
@@ -116,7 +116,7 @@ extended to cross) and analysed in depthmapX.
 - **Generated maps do not reproduce a hand-drawn one.** On Barnsbury, OSM-generated maps agree
   with the hand-drawn axial map at ρ 0.04–0.28 for every measure, with walk or streets-only OSM,
   at every tolerance. Hand-drawn lines run 10–30 m off centrelines and a third follow open space
-  that is not a street; the walk network adds 70% more length than the hand-drawn map holds.
+  off the street network; the walk network adds 70% more length than the hand-drawn map holds.
 - **Axial choice is the bridge**: it tracks angular NACH at ρ 0.6–0.8 in both cities, at every
   radius. Axial integration Rn does not (0.1–0.45).
 - Intelligibility is near zero in both cities, and cleaning moves it more than the city does.
@@ -146,7 +146,7 @@ Maps: `a08_axial_*`, `a09_axial_vs_angular_*`, `b01_barnsbury_axial`, `b02_barns
   the informal fabric changes.
 - No empirical movement data yet (WP5: Copenhagen counts; Project 2: Dharavi gate counts). The
   project compares methods, it does not validate either against behaviour.
-- One cleaning pipeline (osmnx); one SS engine (depthmapX). S4 is a generated line map, not
+- One cleaning pipeline (osmnx); one SS engine (depthmapX). S4 is a generated line map rather than
   a fewest-line or hand-drawn axial map.
 - Coincident duplicate streets remain in the cleaned networks for S0–S3 (≈ 0.7% of Mumbai's
   lines); depthmapX drops them, cityseer keeps them.
@@ -162,6 +162,6 @@ Maps: `a08_axial_*`, `a09_axial_vs_angular_*`, `b01_barnsbury_axial`, `b02_barns
 ## Atlas index
 
 `reports/atlas/atlas.md` lists every map with an auto-generated caption (ρ values computed from
-the data). Classes are quintiles within each panel: ranks, not raw values, are comparable across
+the data). Classes are quintiles within each panel: ranks rather than raw values are comparable across
 panels and cities. Divergence maps show the percentile-rank difference between two measures,
 thin grey where they agree within 10 points.

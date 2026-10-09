@@ -67,7 +67,7 @@ Write-up `reports/phase0/README.md`; tables `reports/results_phase0.md`; figures
 ## Phase 2 — P2 the invisible network (Dec 2026–Mar 2027)
 
 - Digitisation protocol (centreline and axial rules) written before digitising.
-- Dharavi lanes digitised from VHR imagery (check licence); formality classes, not 0/1.
+- Dharavi lanes digitised from VHR imagery (check licence); formality classes rather than 0/1.
 - Informal-lane inclusion delta: every measure with / without lanes, mapped on formal segments.
 - VGA (S5) on open space from building footprints in the settlement.
 - Gate counts in Dharavi (empirical movement reference; standard SS observation method).

@@ -29,7 +29,7 @@ Run 7 Oct 2026. Figure: `figures/fig5_tiles_1000_800.png` (generated locally).
    (e.g. NAIN 0.38 vs 0.59; betweenness end to end 0.30 vs 0.53). Some parts of Mumbai are
    where the two approaches disagree most. Which parts, and what they have in common, is the
    next thing to look at on the tile map (`data/<site>/tiles_1000.gpkg`).
-4. **Part of NAIN's reordering is between neighbourhoods, not within them.** Inside a tile,
+4. **Part of NAIN's reordering is between neighbourhoods rather than within them.** Inside a tile,
    NC²/TD and NAIN agree at a median 0.81 (Copenhagen) and 0.72 (Mumbai); city-wide at 800 m the
    figures are 0.64 and 0.59. NAIN mostly re-ranks areas against each other by damping the
    effect of how many segments each area has, and re-ranks streets within an area less.
@@ -39,7 +39,7 @@ Run 7 Oct 2026. Figure: `figures/fig5_tiles_1000_800.png` (generated locally).
 - The first table was computed on the 10 m network with consolidation stubs; the rerun below uses
   the cleaned baseline and supersedes it.
 - Within-tile ρ rests on 50 to a few hundred segments and a narrower range of values, so
-  individual tiles are noisy; read the distribution, not single tiles.
+  individual tiles are noisy; read the distribution rather than single tiles.
 - One tile size and one radius. 2 km tiles and R400 are the obvious checks.
 
 
