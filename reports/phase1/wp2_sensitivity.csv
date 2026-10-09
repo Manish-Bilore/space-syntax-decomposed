@@ -1,0 +1,441 @@
+radius,family,step,a,b,n,spearman,top10_overlap,site,consolidate_m
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,64572,0.9758314100040592,0.9121883227505032,copenhagen,0
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,64549,0.951132436960472,0.8029434546862897,copenhagen,0
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,64549,0.8379083558290329,0.6597986057319907,copenhagen,0
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,64549,0.9172805904162415,0.647405112316034,copenhagen,0
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,64625,0.5060922429070751,0.2924791086350975,copenhagen,0
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,64572,-0.040963639836914,0.0944711166176242,copenhagen,0
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,64572,0.7720017983659839,0.7328480718599969,copenhagen,0
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,64572,0.8883274920873393,0.6891745392597182,copenhagen,0
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,64572,0.8959495625519918,0.70435186619173,copenhagen,0
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,64625,0.8576809190289775,0.4124110182606004,copenhagen,0
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,64572,0.6962574892039118,0.3117546848381601,copenhagen,0
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,64572,0.9849014103711085,0.8914356512312219,copenhagen,0
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,64568,0.9307754877948896,0.5719374322440762,copenhagen,0
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,64568,0.7730173886502719,0.5095245470032523,copenhagen,0
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,64568,0.9395092397447162,0.7407464766919623,copenhagen,0
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,64625,0.5994294459051911,0.3775920767564221,copenhagen,0
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,64572,-0.0193208727491986,0.0323679727427597,copenhagen,0
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,64572,0.7596687414013834,0.7317639770791389,copenhagen,0
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,64572,0.8573391859986724,0.6026018274740592,copenhagen,0
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,64572,0.9257958988215244,0.7732693201177017,copenhagen,0
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,64625,0.9286154664265774,0.5540080470442588,copenhagen,0
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,64572,0.7633724712626719,0.3943007588663466,copenhagen,0
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,64572,0.9892016068285888,0.8524082391203345,copenhagen,0
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,64570,0.9075288606807752,0.4011150689174539,copenhagen,0
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,64570,0.7764315108829314,0.5047235558308812,copenhagen,0
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,64570,0.9630786302111422,0.8161684993030819,copenhagen,0
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,64625,0.6437022765606122,0.4071494893221912,copenhagen,0
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,64572,0.0224621533663068,0.0509524547003252,copenhagen,0
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,64572,0.7494298681838385,0.7334675545919157,copenhagen,0
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,64572,0.845915425180146,0.591915750348459,copenhagen,0
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,64572,0.9351257517035488,0.8432708688245315,copenhagen,0
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,64625,0.9506120717512716,0.6296812132466728,copenhagen,0
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,64572,0.7820093787615575,0.4480408858603066,copenhagen,0
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,64572,0.9933314390823136,0.8556605234629084,copenhagen,0
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,64572,0.9115669312792984,0.4517577822518197,copenhagen,0
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,64572,0.8361749493948161,0.5981105776676475,copenhagen,0
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,64572,0.9862608674572436,0.888183366888648,copenhagen,0
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,64625,0.706259285724354,0.4733828536056948,copenhagen,0
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,64572,0.1697874039202415,0.1347374941923494,copenhagen,0
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,64572,0.7317187458385328,0.7384234164472665,copenhagen,0
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,64572,0.8566455627123286,0.6038407929378968,copenhagen,0
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,64572,0.9448131312409122,0.9084714263589904,copenhagen,0
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,64625,0.9636246425045768,0.7536366450015475,copenhagen,0
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,64572,0.7942889380955439,0.4971348923648753,copenhagen,0
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,31271,0.9079348206962924,0.6635753118004477,copenhagen,10
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,31248,0.9774748179744488,0.8608,copenhagen,10
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,31248,0.7538190280056652,0.44864,copenhagen,10
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,31248,0.7885515985153776,0.5248,copenhagen,10
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,31291,0.52527358180922,0.274209012464046,copenhagen,10
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,31271,0.0645483507140879,0.0693955868244323,copenhagen,10
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,31271,0.6340310512039051,0.566677326511033,copenhagen,10
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,31271,0.7866027086884356,0.6367125039974416,copenhagen,10
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,31271,0.6917313031436995,0.4982411256795651,copenhagen,10
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,31291,0.7810684875349181,0.3537871524448706,copenhagen,10
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,31271,0.5712602466846554,0.307323313079629,copenhagen,10
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,31271,0.9335271436705582,0.6379916853213943,copenhagen,10
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,31267,0.9705040146292216,0.8014070994563479,copenhagen,10
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,31267,0.7560252294026106,0.4240486088903102,copenhagen,10
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,31267,0.8371706268458969,0.517109050207867,copenhagen,10
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,31291,0.6438845684541539,0.3451581975071908,copenhagen,10
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,31271,0.2072274549648061,0.0844259673808762,copenhagen,10
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,31271,0.6148010624182726,0.5913015669971219,copenhagen,10
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,31271,0.7515208126799212,0.5788295490885833,copenhagen,10
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,31271,0.732119685477273,0.5765909817716661,copenhagen,10
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,31291,0.8891559687335588,0.5270054330457015,copenhagen,10
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,31271,0.6320840591235373,0.425647585545251,copenhagen,10
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,31271,0.9534333646196512,0.6178445794691397,copenhagen,10
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,31269,0.974340791568019,0.7815797889350815,copenhagen,10
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,31269,0.780103860439035,0.4019827310521266,copenhagen,10
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,31269,0.8637661777762987,0.5318196354333227,copenhagen,10
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,31291,0.6919925952116367,0.3557046979865771,copenhagen,10
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,31271,0.2937653677139075,0.120243044451551,copenhagen,10
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,31271,0.6040945976049497,0.5938599296450272,copenhagen,10
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,31271,0.7367609610272644,0.5551646945954589,copenhagen,10
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,31271,0.7291717964539476,0.5935401343140391,copenhagen,10
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,31291,0.917637962086516,0.6219239373601789,copenhagen,10
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,31271,0.6440417058126169,0.4560281419891269,copenhagen,10
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,31271,0.9721026183028252,0.6709306044131755,copenhagen,10
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,31271,0.9795239976729794,0.7886152862168212,copenhagen,10
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,31271,0.8333744054289364,0.543971858010873,copenhagen,10
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,31271,0.9040537230880952,0.6034537895746722,copenhagen,10
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,31291,0.7373859716042801,0.4010866091403004,copenhagen,10
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,31271,0.4233385737016134,0.2168212344099776,copenhagen,10
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,31271,0.588028907624742,0.5967380876239207,copenhagen,10
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,31271,0.7464445968179331,0.532459226095299,copenhagen,10
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,31271,0.7287850410669036,0.5810681164055005,copenhagen,10
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,31291,0.929644688525851,0.7107702141259188,copenhagen,10
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,31271,0.6468449179521727,0.46945954589063,copenhagen,10
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,31059,0.9125439889684748,0.678686413393432,copenhagen,10d
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,31036,0.9763274378587038,0.8563144329896907,copenhagen,10d
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,31036,0.8041770152206168,0.5144974226804123,copenhagen,10d
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,31036,0.8281345258771806,0.5795747422680413,copenhagen,10d
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,31284,0.4881600582069159,0.2228260869565217,copenhagen,10d
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,31059,0.0718775127703287,0.0714745653573728,copenhagen,10d
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,31059,0.6313407737963272,0.5631036703155183,copenhagen,10d
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,31059,0.8447057872494691,0.6944623309723117,copenhagen,10d
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,31059,0.7333893363357311,0.5170637475853187,copenhagen,10d
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,31284,0.7955567061227561,0.3897058823529412,copenhagen,10d
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,31059,0.6120530014844505,0.3219575016097875,copenhagen,10d
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,31059,0.936890286034167,0.6381197681905988,copenhagen,10d
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,31055,0.9693761141130608,0.798454603992273,copenhagen,10d
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,31055,0.7966014373001852,0.4816484224082421,copenhagen,10d
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,31055,0.8964161483662083,0.6429491307147457,copenhagen,10d
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,31284,0.6199675307143819,0.3075447570332481,copenhagen,10d
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,31059,0.2142735667365906,0.0856406954282034,copenhagen,10d
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,31059,0.6107392589181575,0.577269800386349,copenhagen,10d
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,31059,0.8064670839944372,0.6159047005795235,copenhagen,10d
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,31059,0.8187543659095864,0.6564713457823568,copenhagen,10d
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,31284,0.9006739770670499,0.5428388746803069,copenhagen,10d
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,31059,0.6736286987970347,0.4420476497102382,copenhagen,10d
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,31059,0.9557306441069612,0.6233097231165486,copenhagen,10d
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,31057,0.9738012149693258,0.7739858338699291,copenhagen,10d
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,31057,0.8222287954576675,0.4710238248551191,copenhagen,10d
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,31057,0.9257340059464068,0.6506761107533805,copenhagen,10d
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,31284,0.6795412753741534,0.3590153452685422,copenhagen,10d
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,31059,0.3107230509851521,0.127173213135866,copenhagen,10d
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,31059,0.6007790139314552,0.5946555054732775,copenhagen,10d
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,31059,0.7888921593234818,0.5914359304571797,copenhagen,10d
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,31059,0.834931812898728,0.716677398583387,copenhagen,10d
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,31284,0.9328903743808205,0.631074168797954,copenhagen,10d
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,31059,0.6861238642426711,0.4655505473277527,copenhagen,10d
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,31059,0.9734834382540551,0.6542176432710882,copenhagen,10d
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,31059,0.9793452876217584,0.7900837089504186,copenhagen,10d
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,31059,0.8570484079127751,0.5885383129426915,copenhagen,10d
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,31059,0.9486583952919106,0.71216999356085,copenhagen,10d
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,31284,0.7429065303379246,0.4114450127877238,copenhagen,10d
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,31059,0.4447069353398193,0.2337411461687057,copenhagen,10d
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,31059,0.587084641920286,0.6004507405022537,copenhagen,10d
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,31059,0.7937262395015948,0.581777205408886,copenhagen,10d
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,31059,0.8437649657233485,0.7572440437862202,copenhagen,10d
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,31284,0.9498507715814568,0.7400895140664961,copenhagen,10d
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,31059,0.690268774054234,0.4961365099806825,copenhagen,10d
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,30030,0.94088817346466,0.7262737262737263,copenhagen,10dp
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,30007,0.9755185327867866,0.85838053982006,copenhagen,10dp
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,30007,0.8030053047277932,0.4908363878707097,copenhagen,10dp
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,30007,0.8250045692120603,0.5678107297567477,copenhagen,10dp
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,30051,0.4915284622689614,0.2232945091514143,copenhagen,10dp
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,30030,0.0660777188333004,0.0532800532800532,copenhagen,10dp
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,30030,0.6753479750800686,0.5864135864135864,copenhagen,10dp
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,30030,0.8523269584593539,0.6973026973026973,copenhagen,10dp
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,30030,0.7297480821699325,0.5078255078255078,copenhagen,10dp
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,30051,0.7903342842551553,0.3853577371048253,copenhagen,10dp
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,30030,0.6044597737161015,0.3143523143523143,copenhagen,10dp
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,30030,0.9593605107408912,0.6953046953046953,copenhagen,10dp
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,30026,0.9693913292759732,0.7765567765567766,copenhagen,10dp
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,30026,0.7923239426345486,0.4598734598734599,copenhagen,10dp
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,30026,0.8946793746088173,0.6250416250416251,copenhagen,10dp
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,30051,0.6236243465335994,0.3121464226289517,copenhagen,10dp
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,30030,0.2176130024596099,0.0775890775890775,copenhagen,10dp
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,30030,0.6570312700634247,0.6007326007326007,copenhagen,10dp
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,30030,0.8087962015399421,0.6077256077256077,copenhagen,10dp
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,30030,0.8216558455289781,0.6480186480186481,copenhagen,10dp
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,30051,0.8989749237112551,0.5377703826955075,copenhagen,10dp
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,30030,0.6734241326524546,0.4372294372294372,copenhagen,10dp
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,30030,0.9714974100847672,0.694971694971695,copenhagen,10dp
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,30028,0.9730734001423946,0.7718947718947718,copenhagen,10dp
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,30028,0.8172758344196782,0.4632034632034632,copenhagen,10dp
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,30028,0.9244444639891426,0.653013653013653,copenhagen,10dp
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,30051,0.6807556514392903,0.3550748752079867,copenhagen,10dp
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,30030,0.3115125358941476,0.1275391275391275,copenhagen,10dp
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,30030,0.6461489590907639,0.61005661005661,copenhagen,10dp
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,30030,0.7890407239664412,0.5804195804195804,copenhagen,10dp
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,30030,0.8400374070942229,0.7176157176157176,copenhagen,10dp
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,30051,0.9322752279001366,0.6299500831946755,copenhagen,10dp
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,30030,0.6873302645117682,0.4662004662004662,copenhagen,10dp
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,30030,0.9837227617902448,0.7342657342657343,copenhagen,10dp
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,30030,0.9796144555113672,0.7915417915417915,copenhagen,10dp
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,30030,0.8547205652515794,0.6153846153846154,copenhagen,10dp
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,30030,0.9484723228828228,0.7112887112887113,copenhagen,10dp
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,30051,0.743417144263298,0.4083194675540765,copenhagen,10dp
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,30030,0.444706361292057,0.2480852480852481,copenhagen,10dp
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,30030,0.6296874659214763,0.6223776223776224,copenhagen,10dp
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,30030,0.7931393053300465,0.5774225774225774,copenhagen,10dp
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,30030,0.8498791921720397,0.7609057609057609,copenhagen,10dp
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,30051,0.9498666020425288,0.7371048252911814,copenhagen,10dp
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,30030,0.6915795496951825,0.4948384948384948,copenhagen,10dp
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,15230,0.8394422478375821,0.6375574523965857,copenhagen,20
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,15195,0.9856365755298484,0.8855263157894737,copenhagen,20
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,15195,0.7700805319329032,0.4980263157894737,copenhagen,20
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,15195,0.7367493254715359,0.4638157894736842,copenhagen,20
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,15238,0.5525574678132861,0.2841207349081365,copenhagen,20
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,15230,0.1498409687265776,0.1293499671700591,copenhagen,20
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,15230,0.5381036872077312,0.5279054497701904,copenhagen,20
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,15230,0.7944298462348985,0.6671043992120814,copenhagen,20
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,15230,0.5437908231540669,0.3788575180564675,copenhagen,20
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,15238,0.7771020207808786,0.3818897637795275,copenhagen,20
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,15230,0.5249022615539589,0.2994090610636901,copenhagen,20
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,15230,0.8952887091631984,0.650032829940906,copenhagen,20
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,15226,0.9834279036940335,0.8759028233749179,copenhagen,20
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,15226,0.8344493397855981,0.5600787918581747,copenhagen,20
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,15226,0.8506860779812123,0.5600787918581747,copenhagen,20
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,15238,0.6790800886055419,0.3779527559055118,copenhagen,20
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,15230,0.3706363962075509,0.1411687458962573,copenhagen,20
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,15230,0.4341971723279847,0.4451739986868023,copenhagen,20
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,15230,0.719080510373804,0.5771503611293499,copenhagen,20
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,15230,0.6589436292843137,0.5114904793171372,copenhagen,20
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,15238,0.8670063696162092,0.5452755905511811,copenhagen,20
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,15230,0.5564068853685532,0.3906762967826658,copenhagen,20
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,15230,0.9111547125750334,0.6362442547603414,copenhagen,20
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,15228,0.983705577128465,0.8785292186474064,copenhagen,20
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,15228,0.8552351972941031,0.556795797767564,copenhagen,20
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,15228,0.8888568378980137,0.5863427445830598,copenhagen,20
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,15238,0.7124156219764137,0.4094488188976378,copenhagen,20
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,15230,0.4410439310295581,0.1346027577150361,copenhagen,20
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,15230,0.3931839192479829,0.4215364412344057,copenhagen,20
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,15230,0.6920451281202872,0.5246224556795798,copenhagen,20
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,15230,0.6700999610466456,0.582403151674327,copenhagen,20
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,15238,0.903033218486022,0.6332020997375328,copenhagen,20
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,15230,0.5501554252477635,0.4064346684175968,copenhagen,20
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,15230,0.922676217409216,0.5640183847669075,copenhagen,20
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,15230,0.9861338274859311,0.8562048588312541,copenhagen,20
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,15230,0.892296016590105,0.4326986211424819,copenhagen,20
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,15230,0.9225942314164656,0.5062376887721602,copenhagen,20
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,15238,0.7845355233921774,0.4337270341207349,copenhagen,20
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,15230,0.5552384395164419,0.1181877872619829,copenhagen,20
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,15230,0.361403440770854,0.42284963887065,copenhagen,20
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,15230,0.7052366852379945,0.5187130663164806,copenhagen,20
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,15230,0.674721791070008,0.5975049244911359,copenhagen,20
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,15238,0.925727110925888,0.7296587926509186,copenhagen,20
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,15230,0.5423598143397544,0.412344057780696,copenhagen,20
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,16986,0.9495060236356316,0.8687463213655091,mumbai_island,0
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,16964,0.9314452289379822,0.7889150943396226,mumbai_island,0
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,16964,0.8907296878370744,0.6367924528301887,mumbai_island,0
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,16964,0.8982607779225681,0.7323113207547169,mumbai_island,0
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,16987,0.506874537528665,0.2607416127133608,mumbai_island,0
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,16986,0.0097118965857751,0.0959387875220718,mumbai_island,0
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,16986,0.7935055399477847,0.7086521483225426,mumbai_island,0
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,16986,0.93617929639014,0.7804590935844614,mumbai_island,0
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,16986,0.8492787052943441,0.633313713949382,mumbai_island,0
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,16987,0.7741433260859447,0.3549146556798117,mumbai_island,0
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,16986,0.6071641836313992,0.2607416127133608,mumbai_island,0
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,16986,0.9688425750001598,0.8640376692171866,mumbai_island,0
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,16982,0.9180026876491664,0.6289752650176679,mumbai_island,0
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,16982,0.8654483133965547,0.7237926972909305,mumbai_island,0
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,16982,0.931460208870219,0.6554770318021201,mumbai_island,0
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,16987,0.6575316722078475,0.4214243672748676,mumbai_island,0
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,16986,0.1636528606197487,0.2077692760447322,mumbai_island,0
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,16986,0.7902567434989131,0.7004120070629782,mumbai_island,0
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,16986,0.8916680967182858,0.6374337845791642,mumbai_island,0
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,16986,0.8946376808435057,0.6639199529134785,mumbai_island,0
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,16987,0.8815419144433521,0.5279576221306651,mumbai_island,0
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,16986,0.6920611228379442,0.340788699234844,mumbai_island,0
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,16986,0.976511235353595,0.8663919952913478,mumbai_island,0
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,16984,0.9194304914542136,0.6030624263839811,mumbai_island,0
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,16984,0.8761812982732584,0.6996466431095406,mumbai_island,0
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,16984,0.9371129441938896,0.6878680800942285,mumbai_island,0
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,16987,0.7206973493031599,0.4649793996468511,mumbai_island,0
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,16986,0.2765311316580717,0.2542672160094173,mumbai_island,0
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,16986,0.7840949790200631,0.6957033549146556,mumbai_island,0
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,16986,0.8707056694421684,0.5897586815773985,mumbai_island,0
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,16986,0.9224766849018244,0.735138316656857,mumbai_island,0
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,16987,0.9310197453582716,0.6021188934667452,mumbai_island,0
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,16986,0.7348437263975743,0.3919952913478516,mumbai_island,0
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,16986,0.9830379643632896,0.857563272513243,mumbai_island,0
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,16986,0.89347583627652,0.416715715126545,mumbai_island,0
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,16986,0.8918868733642658,0.7280753384343731,mumbai_island,0
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,16986,0.9515066864394334,0.8675691583284285,mumbai_island,0
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,16987,0.7919852945516687,0.5603296056503826,mumbai_island,0
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,16986,0.3526628855642265,0.2160094173042966,mumbai_island,0
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,16986,0.7678287746599086,0.7174808711006474,mumbai_island,0
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,16986,0.8652813707296213,0.583284284873455,mumbai_island,0
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,16986,0.9485533346662668,0.7934078869923484,mumbai_island,0
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,16987,0.9682961777214738,0.7174808711006474,mumbai_island,0
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,16986,0.7749563572463606,0.429664508534432,mumbai_island,0
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,10269,0.8804357256355148,0.7711781888997079,mumbai_island,10
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,10248,0.9775041403157584,0.8692682926829268,mumbai_island,10
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,10248,0.8424603085969726,0.7082926829268292,mumbai_island,10
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,10248,0.6708813391892592,0.4868292682926829,mumbai_island,10
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,10271,0.4366090400863948,0.2015579357351509,mumbai_island,10
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,10269,-0.0344877849550151,0.0778967867575462,mumbai_island,10
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,10269,0.6898094404132797,0.6358325219084713,mumbai_island,10
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,10269,0.8096184709304839,0.7127555988315482,mumbai_island,10
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,10269,0.6193470759869437,0.4255111976630964,mumbai_island,10
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,10271,0.6789768379872909,0.2989289191820837,mumbai_island,10
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,10269,0.3877387286908465,0.1791626095423563,mumbai_island,10
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,10269,0.9200131992917004,0.8675754625121713,mumbai_island,10
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,10265,0.9763252127114516,0.8762183235867447,mumbai_island,10
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,10265,0.8750036088965576,0.8001949317738791,mumbai_island,10
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,10265,0.7831304651478477,0.6091617933723197,mumbai_island,10
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,10271,0.5898183340571514,0.3573515092502434,mumbai_island,10
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,10269,0.1957416957796338,0.1645569620253164,mumbai_island,10
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,10269,0.6719848887720786,0.6231742940603701,mumbai_island,10
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,10269,0.7527010957416617,0.617332035053554,mumbai_island,10
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,10269,0.6696169251451223,0.4790652385589094,mumbai_island,10
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,10271,0.8222734320079707,0.501460564751704,mumbai_island,10
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,10269,0.4586299267502248,0.2823758519961051,mumbai_island,10
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,10269,0.9446702024518486,0.878286270691334,mumbai_island,10
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,10267,0.9755754809366683,0.8617332035053554,mumbai_island,10
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,10267,0.8862000124604009,0.804284323271665,mumbai_island,10
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,10267,0.8176522721408677,0.6309639727361246,mumbai_island,10
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,10271,0.6764738089471488,0.49269717624148,mumbai_island,10
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,10269,0.3331917367181018,0.2716650438169425,mumbai_island,10
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,10269,0.646288545422247,0.5959104186952289,mumbai_island,10
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,10269,0.7161026220785067,0.5423563777994158,mumbai_island,10
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,10269,0.6626479924541492,0.5043816942551119,mumbai_island,10
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,10271,0.889794891212281,0.569620253164557,mumbai_island,10
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,10269,0.4898747581391519,0.3271665043816942,mumbai_island,10
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,10269,0.9710674567833106,0.9298928919182085,mumbai_island,10
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,10269,0.9754930977518916,0.904576436222006,mumbai_island,10
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,10269,0.912202325817294,0.804284323271665,mumbai_island,10
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,10269,0.8578645051093595,0.7322297955209348,mumbai_island,10
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,10271,0.7584523144029145,0.6407010710808179,mumbai_island,10
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,10269,0.4649628668027011,0.4255111976630964,mumbai_island,10
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,10269,0.6056448103238016,0.6183057448880234,mumbai_island,10
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,10269,0.7015385540331454,0.4975657254138266,mumbai_island,10
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,10269,0.6653438692034604,0.5394352482960078,mumbai_island,10
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,10271,0.9407153445830604,0.7030185004868549,mumbai_island,10
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,10269,0.5213837330442052,0.3924050632911392,mumbai_island,10
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,10045,0.8885156841783594,0.7858565737051793,mumbai_island,10d
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,10025,0.9761076850210452,0.873253493013972,mumbai_island,10d
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,10025,0.8891482821305009,0.7355289421157685,mumbai_island,10d
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,10025,0.7982061789706988,0.5089820359281437,mumbai_island,10d
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,10271,0.4592044685149939,0.184031158714703,mumbai_island,10d
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,10045,-0.0311537657336831,0.0597609561752988,mumbai_island,10d
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,10045,0.708214282418185,0.6354581673306773,mumbai_island,10d
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,10045,0.8950420341443099,0.7749003984063745,mumbai_island,10d
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,10045,0.6859095091868783,0.4870517928286852,mumbai_island,10d
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,10271,0.6953269379440048,0.296981499513145,mumbai_island,10d
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,10045,0.4600770933722575,0.198207171314741,mumbai_island,10d
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,10045,0.9253627461620832,0.8725099601593626,mumbai_island,10d
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,10041,0.9754953815891914,0.8585657370517928,mumbai_island,10d
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,10041,0.9009476535948152,0.8067729083665338,mumbai_island,10d
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,10041,0.8911475015872075,0.5976095617529881,mumbai_island,10d
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,10271,0.6235422411044687,0.3787731256085686,mumbai_island,10d
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,10045,0.226627032946845,0.1603585657370518,mumbai_island,10d
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,10045,0.6900422290878374,0.6195219123505976,mumbai_island,10d
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,10045,0.8509012503889468,0.6802788844621513,mumbai_island,10d
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,10045,0.8110824903721352,0.5727091633466136,mumbai_island,10d
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,10271,0.8503575781365019,0.4878286270691334,mumbai_island,10d
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,10045,0.5638506666661014,0.2818725099601594,mumbai_island,10d
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,10045,0.948071538109372,0.8645418326693227,mumbai_island,10d
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,10043,0.9750317282381584,0.8545816733067729,mumbai_island,10d
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,10043,0.9129271313816288,0.8117529880478087,mumbai_island,10d
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,10043,0.9217432505853654,0.6902390438247012,mumbai_island,10d
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,10271,0.7223536993181752,0.5180136319376826,mumbai_island,10d
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,10045,0.3738489074359402,0.2679282868525896,mumbai_island,10d
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,10045,0.6639908358726778,0.5976095617529881,mumbai_island,10d
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,10045,0.8252025918481909,0.6185258964143426,mumbai_island,10d
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,10045,0.8476431651039946,0.6424302788844621,mumbai_island,10d
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,10271,0.9166506169092034,0.5705939629990263,mumbai_island,10d
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,10045,0.6123680185817868,0.3396414342629482,mumbai_island,10d
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,10045,0.9718432280406734,0.9402390438247012,mumbai_island,10d
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,10045,0.9751708545394512,0.9033864541832668,mumbai_island,10d
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,10045,0.9377220342929592,0.799800796812749,mumbai_island,10d
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,10045,0.9490059372233964,0.8077689243027888,mumbai_island,10d
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,10271,0.8052183980370666,0.6124634858812074,mumbai_island,10d
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,10045,0.5156077770084541,0.3705179282868526,mumbai_island,10d
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,10045,0.6224279451583449,0.6135458167330677,mumbai_island,10d
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,10045,0.8109863604553824,0.6085657370517928,mumbai_island,10d
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,10045,0.8737059623679423,0.6982071713147411,mumbai_island,10d
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,10271,0.9592716288097364,0.7030185004868549,mumbai_island,10d
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,10045,0.6518904414782691,0.4073705179282869,mumbai_island,10d
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,9593,0.9200931225938072,0.8415015641293013,mumbai_island,10dp
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,9573,0.9770250101910918,0.864158829676071,mumbai_island,10dp
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,9573,0.8889744711589023,0.7387669801462905,mumbai_island,10dp
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,9573,0.7947834744260648,0.5088819226750261,mumbai_island,10dp
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,9594,0.4335981739891674,0.1970802919708029,mumbai_island,10dp
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,9593,-0.0436169257957657,0.0802919708029197,mumbai_island,10dp
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,9593,0.7664683673781261,0.6517205422314911,mumbai_island,10dp
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,9593,0.9163251597227504,0.7904066736183525,mumbai_island,10dp
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,9593,0.6806833941737973,0.4661105318039624,mumbai_island,10dp
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,9594,0.6874100524424132,0.3023983315954119,mumbai_island,10dp
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,9593,0.4359283715706716,0.1814389989572471,mumbai_island,10dp
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,9593,0.9540057170907232,0.894681960375391,mumbai_island,10dp
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,9589,0.975777628067925,0.8842544316996872,mumbai_island,10dp
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,9589,0.903012995229478,0.8196037539103233,mumbai_island,10dp
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,9589,0.8916517974754954,0.6444212721584984,mumbai_island,10dp
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,9594,0.6200646832088357,0.3722627737226277,mumbai_island,10dp
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,9593,0.2256060646864863,0.1835245046923879,mumbai_island,10dp
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,9593,0.7531616402339039,0.6392075078206465,mumbai_island,10dp
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,9593,0.8710868526561685,0.6976016684045881,mumbai_island,10dp
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,9593,0.8086873165600963,0.5557872784150156,mumbai_island,10dp
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,9594,0.8400115699601225,0.497393117831074,mumbai_island,10dp
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,9593,0.5523765625391597,0.2815432742440041,mumbai_island,10dp
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,9593,0.9705031739243484,0.8686131386861314,mumbai_island,10dp
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,9591,0.9751183236244902,0.8602711157455682,mumbai_island,10dp
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,9591,0.9190482763261664,0.8070907194994786,mumbai_island,10dp
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,9591,0.9232540403404138,0.7090719499478624,mumbai_island,10dp
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,9594,0.7228605382092289,0.5307612095933264,mumbai_island,10dp
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,9593,0.3757684595678505,0.2700729927007299,mumbai_island,10dp
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,9593,0.7307717806584809,0.6152241918665277,mumbai_island,10dp
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,9593,0.8447072255804013,0.6204379562043796,mumbai_island,10dp
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,9593,0.8506611833080175,0.6319082377476538,mumbai_island,10dp
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,9594,0.9111536153688564,0.556830031282586,mumbai_island,10dp
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,9593,0.6119833910680922,0.3169968717413973,mumbai_island,10dp
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,9593,0.983828819221756,0.9311783107403544,mumbai_island,10dp
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,9593,0.9786150700229812,0.9051094890510948,mumbai_island,10dp
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,9593,0.9417281995515728,0.7977059436913452,mumbai_island,10dp
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,9593,0.952256852365619,0.8289885297184567,mumbai_island,10dp
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,9594,0.8081633974326866,0.6454640250260688,mumbai_island,10dp
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,9593,0.5280406757788604,0.4004171011470281,mumbai_island,10dp
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,9593,0.6936052095354438,0.6506777893639207,mumbai_island,10dp
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,9593,0.8302031980123283,0.6152241918665277,mumbai_island,10dp
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,9593,0.8821956255482952,0.7101147028154328,mumbai_island,10dp
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,9594,0.9572766986093753,0.6976016684045881,mumbai_island,10dp
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,9593,0.6615528501810695,0.3910323253388947,mumbai_island,10dp
+400,closeness,representation: junction -> segment,S0_harmonic_400,S1_harmonic_400,7141,0.9234080496517418,0.7871148459383753,mumbai_island,20
+400,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_400,S1_hillier_400,7109,0.9902895201053012,0.9085794655414908,mumbai_island,20
+400,closeness,cost: metric -> angular,S1_hillier_400,S2_hillier_400,7109,0.8773441254691351,0.6666666666666666,mumbai_island,20
+400,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_400,S3_integration_400,7109,0.6354479863621284,0.4669479606188467,mumbai_island,20
+400,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_400,S3_nain_400,7143,0.4681602184040375,0.1834733893557422,mumbai_island,20
+400,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_400,S3_nain_400,7141,0.0416611111590269,0.0462184873949579,mumbai_island,20
+400,betweenness,representation: junction -> segment,S0_betweenness_400,S1_betweenness_400,7141,0.6299441021967467,0.5644257703081232,mumbai_island,20
+400,betweenness,cost: metric -> angular,S1_betweenness_400,S2_betweenness_400,7141,0.8059839161289934,0.7086834733893558,mumbai_island,20
+400,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_400,S3_choice_400,7141,0.5052064125858087,0.3697478991596639,mumbai_island,20
+400,betweenness,normalisation: choice -> NACH,S3_choice_400,S3_nach_400,7143,0.6587922929796536,0.2913165266106443,mumbai_island,20
+400,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_400,S3_nach_400,7141,0.3289955655132349,0.1330532212885154,mumbai_island,20
+800,closeness,representation: junction -> segment,S0_harmonic_800,S1_harmonic_800,7141,0.9614572883916266,0.8487394957983193,mumbai_island,20
+800,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_800,S1_hillier_800,7137,0.986741598305814,0.938375350140056,mumbai_island,20
+800,closeness,cost: metric -> angular,S1_hillier_800,S2_hillier_800,7137,0.9003983305527782,0.7703081232492998,mumbai_island,20
+800,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_800,S3_integration_800,7137,0.7842364360571223,0.6764705882352942,mumbai_island,20
+800,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_800,S3_nain_800,7143,0.5698525727996183,0.3109243697478991,mumbai_island,20
+800,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_800,S3_nain_800,7141,0.2434622263359183,0.1330532212885154,mumbai_island,20
+800,betweenness,representation: junction -> segment,S0_betweenness_800,S1_betweenness_800,7141,0.5924886576492663,0.5588235294117647,mumbai_island,20
+800,betweenness,cost: metric -> angular,S1_betweenness_800,S2_betweenness_800,7141,0.7302471608448384,0.6134453781512605,mumbai_island,20
+800,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_800,S3_choice_800,7141,0.6122661766400987,0.4775910364145658,mumbai_island,20
+800,betweenness,normalisation: choice -> NACH,S3_choice_800,S3_nach_800,7143,0.7816779214871792,0.4411764705882353,mumbai_island,20
+800,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_800,S3_nach_800,7141,0.4133418741467352,0.2324929971988795,mumbai_island,20
+1200,closeness,representation: junction -> segment,S0_harmonic_1200,S1_harmonic_1200,7141,0.9748764251079564,0.8809523809523809,mumbai_island,20
+1200,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_1200,S1_hillier_1200,7138,0.9861898994456602,0.9425770308123248,mumbai_island,20
+1200,closeness,cost: metric -> angular,S1_hillier_1200,S2_hillier_1200,7138,0.914795540262002,0.8011204481792717,mumbai_island,20
+1200,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_1200,S3_integration_1200,7138,0.8462028467953242,0.7156862745098039,mumbai_island,20
+1200,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_1200,S3_nain_1200,7143,0.6718688085717298,0.4355742296918767,mumbai_island,20
+1200,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_1200,S3_nain_1200,7141,0.4000691877188237,0.1834733893557422,mumbai_island,20
+1200,betweenness,representation: junction -> segment,S0_betweenness_1200,S1_betweenness_1200,7141,0.5574633804315908,0.5546218487394958,mumbai_island,20
+1200,betweenness,cost: metric -> angular,S1_betweenness_1200,S2_betweenness_1200,7141,0.6949682706835595,0.5798319327731093,mumbai_island,20
+1200,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_1200,S3_choice_1200,7141,0.6177917963430298,0.4985994397759103,mumbai_island,20
+1200,betweenness,normalisation: choice -> NACH,S3_choice_1200,S3_nach_1200,7143,0.8589597028267099,0.5672268907563025,mumbai_island,20
+1200,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_1200,S3_nach_1200,7141,0.4472968513340112,0.2983193277310924,mumbai_island,20
+2000,closeness,representation: junction -> segment,S0_harmonic_2000,S1_harmonic_2000,7141,0.9842790001815716,0.938375350140056,mumbai_island,20
+2000,closeness,closeness form: harmonic -> NC^2/TD,S1_harmonic_2000,S1_hillier_2000,7141,0.9857323942655584,0.9355742296918768,mumbai_island,20
+2000,closeness,cost: metric -> angular,S1_hillier_2000,S2_hillier_2000,7141,0.9428235613583976,0.8053221288515406,mumbai_island,20
+2000,closeness,engine + straight pieces: cityseer -> depthmapX,S2_hillier_2000,S3_integration_2000,7141,0.901095704258138,0.7296918767507002,mumbai_island,20
+2000,closeness,normalisation: NC^2/TD -> NAIN,S3_integration_2000,S3_nain_2000,7143,0.774262557190097,0.4887955182072829,mumbai_island,20
+2000,closeness,end to end: S1 harmonic vs NAIN,S1_harmonic_2000,S3_nain_2000,7141,0.53346491172588,0.2030812324929972,mumbai_island,20
+2000,betweenness,representation: junction -> segment,S0_betweenness_2000,S1_betweenness_2000,7141,0.5119451490229556,0.5406162464985994,mumbai_island,20
+2000,betweenness,cost: metric -> angular,S1_betweenness_2000,S2_betweenness_2000,7141,0.6881000541543685,0.5322128851540616,mumbai_island,20
+2000,betweenness,engine + straight pieces: cityseer -> depthmapX,S2_betweenness_2000,S3_choice_2000,7141,0.61033139508971,0.5322128851540616,mumbai_island,20
+2000,betweenness,normalisation: choice -> NACH,S3_choice_2000,S3_nach_2000,7143,0.9167185234639008,0.6666666666666666,mumbai_island,20
+2000,betweenness,end to end: S1 betweenness vs NACH,S1_betweenness_2000,S3_nach_2000,7141,0.4776926930254328,0.3389355742296919,mumbai_island,20

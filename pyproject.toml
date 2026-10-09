@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssx"
+version = "0.1.0"
+description = "Space Syntax reimplementation and decomposition ladder against network analysis"
+authors = [{ name = "Manish Bilore", email = "bilore.manish@gmail.com" }]
+requires-python = ">=3.11"
+dependencies = [
+  "numpy", "pandas", "scipy", "networkx>=3", "shapely>=2", "geopandas>=1",
+  "cityseer>=5", "osmnx>=2", "tabulate", "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

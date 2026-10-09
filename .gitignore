@@ -1,0 +1,20 @@
+# derived data (rebuilt by the scripts; OSM-derived, ODbL)
+/data/
+/cache/
+# full-resolution maps and archives (web copies live in docs/atlas)
+reports/atlas/
+reports/atlas_small/
+reports/*.zip
+reports/work_*/
+*.graph
+# site build output
+site/
+# python
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/
+# quarto
+docs/_site/
+docs/.quarto/
+/.quarto/

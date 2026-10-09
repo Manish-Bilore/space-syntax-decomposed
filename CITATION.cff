@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Space Syntax, decomposed: which design choices separate Space Syntax from street-network analysis"
+authors:
+  - family-names: Bilore
+    given-names: Manish
+version: 0.1.0
+date-released: 2026-10-09
+license: MIT
+repository-code: "https://github.com/Manish-Bilore/space-syntax-decomposed"
+url: "https://manish-bilore.github.io/space-syntax-decomposed/"
+keywords: [space syntax, street networks, centrality, depthmapX, cityseer, OpenStreetMap, Copenhagen, Mumbai]

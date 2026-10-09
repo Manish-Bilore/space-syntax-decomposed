@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "dashboard/**"
+    - "atlas/windows.csv"
+
+website:
+  title: "Space Syntax, decomposed"
+  description: "Which design choices make Space Syntax differ from street-network analysis? Copenhagen and Mumbai."
+  site-url: https://manish-bilore.github.io/space-syntax-decomposed/
+  repo-url: https://github.com/Manish-Bilore/space-syntax-decomposed
+  repo-actions: [source, issue]
+  page-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: report.qmd
+        text: Report
+      - href: dashboard.qmd
+        text: Dashboard
+      - href: atlas/index.md
+        text: Atlas
+      - text: Work packages
+        menu:
+          - href: results/phase0/index.md
+            text: Phase 0 overview
+          - href: results/results_phase0.md
+            text: Phase 0 tables
+          - href: results/fidelity_barnsbury.md
+            text: Fidelity check
+          - href: results/phase1/index.md
+            text: Phase 1 summary
+          - href: results/phase1/wp1_tiles.md
+            text: WP1 tiles
+          - href: results/phase1/wp2_cleaning_sensitivity.md
+            text: WP2 cleaning
+          - href: results/phase1/wp2_sensitivity_tables.md
+            text: WP2 tables
+          - href: results/phase1/wp2b_consolidation_stubs.md
+            text: WP2b stubs
+          - href: results/phase1/wp3_nested_extents.md
+            text: WP3 nested extents
+          - href: results/phase1/wp4_axial.md
+            text: WP4 axial
+      - href: glossary.md
+        text: Glossary
+      - href: nuances.md
+        text: Nuances
+      - text: Reproduce
+        menu:
+          - href: reproduce.md
+            text: Pipeline
+          - href: depthmapx_build.md
+            text: Building depthmapX
+    right:
+      - icon: github
+        href: https://github.com/Manish-Bilore/space-syntax-decomposed
+  page-footer:
+    left: "Manish Bilore · text and figures CC BY 4.0 · code MIT"
+    right: "Street data © OpenStreetMap contributors (ODbL)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    fig-align: left
+    lightbox: true

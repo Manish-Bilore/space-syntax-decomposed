@@ -1,0 +1,56 @@
+---
+title: "Dashboard"
+title-block-banner: false
+page-layout: custom
+section-divs: false
+toc: false
+include-in-header:
+  - text: |
+      <link rel="stylesheet" href="dashboard/vendor/maplibre-gl.css">
+      <link rel="stylesheet" href="dashboard/dashboard.css">
+      <script src="dashboard/vendor/maplibre-gl.js"></script>
+      <script src="dashboard/app.js"></script>
+---
+
+```{=html}
+<div class="dash">
+  <div class="dash-side">
+    <h2>Explore the ladder</h2>
+    <label>Study area<select id="dash-site"></select></label>
+    <label>Quick comparison<select id="dash-preset"></select></label>
+    <fieldset class="dash-mode">
+      <label><input type="radio" name="dash-mode" value="one" checked> One measure</label>
+      <label><input type="radio" name="dash-mode" value="compare"> Compare A and B</label>
+    </fieldset>
+    <label>Measure A<select id="dash-a"></select></label>
+    <label id="dash-b-row" style="display:none">Measure B<select id="dash-b"></select></label>
+    <label id="dash-radius-row">Radius (m)<select id="dash-radius"></select></label>
+    <label class="inline"><input type="checkbox" id="dash-base" checked> Basemap</label>
+    <h3>Zoom to</h3>
+    <div id="dash-windows"></div>
+    <p class="muted small">Values are percentile ranks within the study area (interior streets).
+      Compare mode maps A minus B: red where A ranks a street higher, blue where B does, grey
+      within 10 points. Street data © OpenStreetMap contributors (ODbL).</p>
+  </div>
+  <div class="dash-main">
+    <div id="dash-head"></div>
+    <div class="dash-mapwrap">
+      <div id="dash-map"></div>
+      <div id="dash-legend"></div>
+      <div id="dash-tip"></div>
+      <div id="dash-status"></div>
+    </div>
+  </div>
+  <div class="dash-right">
+    <section>
+      <h3>A against B</h3>
+      <canvas id="dash-scatter" width="340" height="260"></canvas>
+      <div id="dash-rho" class="small"></div>
+    </section>
+    <section>
+      <h3>Agreement along the ladder</h3>
+      <div id="dash-agree"></div>
+    </section>
+  </div>
+</div>
+```

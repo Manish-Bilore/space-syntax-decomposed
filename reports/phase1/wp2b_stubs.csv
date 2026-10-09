@@ -1,0 +1,7 @@
+site,consolidate_m,streets,network_km,pieces,pieces_per_street,pieces_per_km,stub_ends,stub_end_share,stub_turn_deg_per_km
+copenhagen,0,97085,4120.0,204494,2.11,49.6,8290,0.0427,124.7
+copenhagen,10,47240,3646.1,165123,3.5,45.3,18650,0.1974,411.3
+copenhagen,20,23806,3593.7,102800,4.32,28.6,4025,0.0845,91.7
+mumbai_island,0,21348,1462.3,49504,2.32,33.9,744,0.0174,28.2
+mumbai_island,10,12892,1304.3,45678,3.54,35.0,6471,0.251,408.2
+mumbai_island,20,9054,1295.8,38308,4.23,29.6,2942,0.1625,189.6

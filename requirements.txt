@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+networkx>=3
+shapely>=2
+geopandas>=1
+cityseer>=5
+osmnx>=2
+tabulate
+matplotlib>=3.8
+pytest
