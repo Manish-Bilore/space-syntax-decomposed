@@ -707,41 +707,6 @@
     "text": "Mumbai is OSM only; Dharavi and other informal areas are under-represented (see Networks).\nSegment counts, NC and TD depend on OSM tagging, junction consolidation (10 m) and curve handling. Sensitivity to these is Phase 1.\nRank agreement is not validity. Which rung tracks observed movement is a separate question (counts in Copenhagen; gate counts in Dharavi in Phase 2)."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Space Syntax, decomposed",
-    "section": "",
-    "text": "Which design choices make Space Syntax differ from street-network analysis, by how much, and where? Tested on Copenhagen + Frederiksberg and the Mumbai island city, with every Space Syntax measure reimplemented in Python and matched to depthmapX."
-  },
-  {
-    "objectID": "index.html#key-findings",
-    "href": "index.html#key-findings",
-    "title": "Space Syntax, decomposed",
-    "section": "Key findings",
-    "text": "Key findings\n\n\n\n\n\n\n\n\nFinding\n\n\n\n\n1\nAt walking radii, metric closeness and Space Syntax integration (NAIN) are nearly unrelated (ρ ≈ 0 at 400 m in both cities). No single step explains the gap; the normalisation is the largest.\n\n\n2\nChoice / betweenness is robust across representations, engines and cleaning; integration / closeness is where the approaches part ways.\n\n\n3\nNetwork cleaning (junction consolidation) is a design choice as large as angular cost; consolidation stubs disturb the two engines in opposite directions.\n\n\n4\nMap extent matters for global measures, and position matters more than size.\n\n\n5\nAxial maps generated from OSM centrelines do not reproduce a hand-drawn axial map (ρ ≤ 0.28).\n\n\n6\nNeighbourhoods differ more than cities: within-city spread of agreement is an order of magnitude larger than the Copenhagen–Mumbai difference."
-  },
-  {
-    "objectID": "index.html#read",
-    "href": "index.html#read",
-    "title": "Space Syntax, decomposed",
-    "section": "Read",
-    "text": "Read\n\nReport: definitions, method, results, implications, reporting checklist.\nInteractive dashboard: every measure on the map, any two compared, by radius.\nMap atlas: every map, with captions computed from the data.\nNuance catalogue: 33 conventions in depthmapX, cityseer and OSMnx that change results.\nGlossary.\nWork-package reports: Phase 0 · fidelity check · WP1 tiles · WP2 cleaning · WP2b stubs · WP3 nested extents · WP4 axial.\nReproduce: environment, depthmapX build, and the pipeline commands."
-  },
-  {
-    "objectID": "index.html#method-in-one-table",
-    "href": "index.html#method-in-one-table",
-    "title": "Space Syntax, decomposed",
-    "section": "Method in one table",
-    "text": "Method in one table\n\n\n\n\n\n\n\n\n\n\nRung\nRepresentation\nCost\nMeasures\nEngine\n\n\n\n\nS0\njunction graph\nmetric\nharmonic closeness, betweenness\ncityseer\n\n\nS1\nsegment graph\nmetric\nharmonic, NC²/TD, betweenness\ncityseer\n\n\nS2\nsegment graph\nangular\nNC²/TD, betweenness\ncityseer\n\n\nS3\nstraight pieces\nangular (tulip-1024)\nintegration, choice, NAIN, NACH\ndepthmapX\n\n\nS4\ngenerated axial lines\ntopological\nintegration HH, choice, intelligibility, synergy\ndepthmapX\n\n\n\nAdjacent rungs differ by one design choice; their rank agreement (Spearman ρ over interior streets) measures what that choice does."
-  },
-  {
-    "objectID": "index.html#project",
-    "href": "index.html#project",
-    "title": "Space Syntax, decomposed",
-    "section": "Project",
-    "text": "Project\nPart of a programme on space, movement and exposure in formal and informal cities: P1 Space Syntax decomposed (this site) · P2 the invisible network (Dharavi’s lanes) · P3 pedestrian-weighted exposure. Author: Manish Bilore. Street data © OpenStreetMap contributors (ODbL)."
-  },
-  {
     "objectID": "results/fidelity_barnsbury.html",
     "href": "results/fidelity_barnsbury.html",
     "title": "Fidelity report: barnsbury",

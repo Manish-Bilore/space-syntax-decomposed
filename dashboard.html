@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dashboard – Space Syntax, decomposed</title>
+<title>Dashboard · Space Syntax, decomposed – Space Syntax, decomposed</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,23 +24,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1adabd9efb5b1fc4df5e419f55653521.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-db3f046928a8d22667e8e99954db9a8e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-95e1d8ba2b2bd61b6c579ffcbea3b055.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,12 +68,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <link rel="stylesheet" href="dashboard/vendor/maplibre-gl.css">
 <link rel="stylesheet" href="dashboard/dashboard.css">
 <script src="dashboard/vendor/maplibre-gl.js"></script>
 <script src="dashboard/app.js"></script>
 
 
+<meta property="og:title" content="Dashboard · Space Syntax, decomposed">
+<meta property="og:site_name" content="Space Syntax, decomposed">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -93,10 +96,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./report.html"> 
 <span class="menu-text">Report</span></a>
@@ -156,22 +155,22 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./glossary.html"> 
-<span class="menu-text">Glossary</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./nuances.html"> 
-<span class="menu-text">Nuances</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reproduce" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Reproduce</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Reference</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-reproduce">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="./glossary.html">
+ <span class="dropdown-text">Glossary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./nuances.html">
+ <span class="dropdown-text">Nuance catalogue</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./reproduce.html">
- <span class="dropdown-text">Pipeline</span></a>
+ <span class="dropdown-text">Reproduce the pipeline</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./depthmapx_build.html">
@@ -220,41 +219,60 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="dash">
-  <div class="dash-side">
-    <h2>Explore the ladder</h2>
-    <label>Study area<select id="dash-site"></select></label>
-    <label>Quick comparison<select id="dash-preset"></select></label>
-    <fieldset class="dash-mode">
-      <label><input type="radio" name="dash-mode" value="one" checked=""> One measure</label>
-      <label><input type="radio" name="dash-mode" value="compare"> Compare A and B</label>
-    </fieldset>
-    <label>Measure A<select id="dash-a"></select></label>
-    <label id="dash-b-row" style="display:none">Measure B<select id="dash-b"></select></label>
-    <label id="dash-radius-row">Radius (m)<select id="dash-radius"></select></label>
-    <label class="inline"><input type="checkbox" id="dash-base" checked=""> Basemap</label>
-    <h3>Zoom to</h3>
-    <div id="dash-windows"></div>
-    <p class="muted small">Values are percentile ranks within the study area (interior streets).
-      Compare mode maps A minus B: red where A ranks a street higher, blue where B does, grey
-      within 10 points. Street data © OpenStreetMap contributors (ODbL).</p>
+  <div class="dash-side card">
+    <div class="dash-brand">Explore the ladder</div>
+    <p class="dash-hint">Pick a study area and a measure, or a ready-made comparison.</p>
+
+    <label class="field"><span>Study area</span>
+      <select id="dash-site" aria-label="Study area"></select></label>
+
+    <div class="field"><span>View</span>
+      <div class="seg" id="dash-mode" role="tablist" aria-label="View">
+        <button role="tab" data-v="one" class="on">One measure</button>
+        <button role="tab" data-v="compare">Compare</button>
+      </div></div>
+
+    <label class="field"><span>Quick comparison</span>
+      <select id="dash-preset" aria-label="Quick comparison"></select></label>
+
+    <label class="field"><span id="dash-a-label">Measure</span>
+      <select id="dash-a" aria-label="Measure A"></select></label>
+
+    <label class="field" id="dash-b-row" hidden=""><span>Measure B</span>
+      <select id="dash-b" aria-label="Measure B"></select></label>
+
+    <div class="field" id="dash-radius-row"><span>Radius</span>
+      <div class="seg" id="dash-radius" role="tablist" aria-label="Radius"></div></div>
+
+    <div class="field"><span>Zoom to</span>
+      <div id="dash-windows" class="pills"></div></div>
+
+    <label class="toggle"><input type="checkbox" id="dash-base" checked=""><i></i><span>Basemap</span></label>
+
+    <p class="dash-note">Values are percentile ranks among the study area's interior streets.
+      Compare maps A minus B: red where A ranks a street higher, blue where B does, grey within
+      10 points. Street data © OpenStreetMap contributors (ODbL).</p>
   </div>
+
   <div class="dash-main">
-    <div id="dash-head"></div>
-    <div class="dash-mapwrap">
+    <div id="dash-head" class="dash-head"></div>
+    <div class="dash-mapwrap card">
       <div id="dash-map"></div>
-      <div id="dash-legend"></div>
+      <div id="dash-legend" class="glass"></div>
       <div id="dash-tip"></div>
-      <div id="dash-status"></div>
+      <div id="dash-status" class="glass"><div class="spin"></div><span>Loading map data…</span></div>
     </div>
   </div>
+
   <div class="dash-right">
-    <section>
-      <h3>A against B</h3>
-      <canvas id="dash-scatter" width="340" height="260"></canvas>
-      <div id="dash-rho" class="small"></div>
+    <section class="card pad">
+      <div class="card-title">A against B</div>
+      <div id="dash-rho" class="big-stat"></div>
+      <canvas id="dash-scatter" width="680" height="520" aria-label="Density of A against B percentiles"></canvas>
+      <div class="axis-note">A percentile ↑ · B percentile →</div>
     </section>
-    <section>
-      <h3>Agreement along the ladder</h3>
+    <section class="card pad">
+      <div class="card-title">Agreement along the ladder</div>
       <div id="dash-agree"></div>
     </section>
   </div>
@@ -511,6 +529,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -842,4 +865,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

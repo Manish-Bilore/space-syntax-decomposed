@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Which design choices make Space Syntax differ from street-network analysis, by how much, and where? Copenhagen and Mumbai.">
 
 <title>Space Syntax, decomposed</title>
 <style>
@@ -24,26 +25,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1adabd9efb5b1fc4df5e419f55653521.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-db3f046928a8d22667e8e99954db9a8e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-95e1d8ba2b2bd61b6c579ffcbea3b055.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<meta property="og:title" content="Space Syntax, decomposed">
+<meta property="og:description" content="Which design choices make Space Syntax differ from street-network analysis, by how much, and where? Copenhagen and Mumbai.">
+<meta property="og:site_name" content="Space Syntax, decomposed">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -92,10 +94,6 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./report.html"> 
 <span class="menu-text">Report</span></a>
@@ -155,22 +153,22 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./glossary.html"> 
-<span class="menu-text">Glossary</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./nuances.html"> 
-<span class="menu-text">Nuances</span></a>
-  </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reproduce" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Reproduce</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Reference</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-reproduce">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reference">    
+        <li>
+    <a class="dropdown-item" href="./glossary.html">
+ <span class="dropdown-text">Glossary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./nuances.html">
+ <span class="dropdown-text">Nuance catalogue</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./reproduce.html">
- <span class="dropdown-text">Pipeline</span></a>
+ <span class="dropdown-text">Reproduce the pipeline</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./depthmapx_build.html">
@@ -194,18 +192,21 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Space Syntax, decomposed</h1>
 </div>
 
+<div>
+  <div class="description">
+    Which design choices make Space Syntax differ from street-network analysis, by how much, and where? Copenhagen and Mumbai.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -220,133 +221,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Which design choices make Space Syntax differ from street-network analysis, by how much, and where?</strong> Tested on Copenhagen + Frederiksberg and the Mumbai island city, with every Space Syntax measure reimplemented in Python and matched to depthmapX.</p>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><a href="atlas/a13_windows.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Indre By, Colaba and Dharavi at the same scale"><img src="atlas/a13_windows.png" class="img-fluid figure-img" alt="Indre By, Colaba and Dharavi at the same scale"></a></p>
-<figcaption>Indre By, Colaba and Dharavi at the same scale</figcaption>
-</figure>
+<style>#title-block-header { display: none; }</style>
+
+<div class="ss-hero">
+  <div class="ss-eyebrow">Copenhagen · Mumbai · OpenStreetMap</div>
+  <h1>Space Syntax, decomposed.</h1>
+  <p class="ss-lede">Space Syntax and street-network analysis rank the same streets differently.
+  We take the route from one to the other apart, one design choice at a time, and measure what each choice does, and where.</p>
+  <div class="ss-ctas">
+    <a class="ss-btn primary" href="dashboard.html">Explore the dashboard</a>
+    <a class="ss-btn ghost" href="report.html">Read the report</a>
+  </div>
 </div>
-<section id="key-findings" class="level2">
-<h2 class="anchored" data-anchor-id="key-findings">Key findings</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Finding</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>At walking radii, metric closeness and Space Syntax integration (NAIN) are nearly unrelated (ρ ≈ 0 at 400 m in both cities). No single step explains the gap; the <strong>normalisation</strong> is the largest.</td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td><strong>Choice / betweenness is robust</strong> across representations, engines and cleaning; integration / closeness is where the approaches part ways.</td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td><strong>Network cleaning</strong> (junction consolidation) is a design choice as large as angular cost; consolidation stubs disturb the two engines in opposite directions.</td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td><strong>Map extent</strong> matters for global measures, and <strong>position matters more than size</strong>.</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>Axial maps <strong>generated from OSM centrelines do not reproduce</strong> a hand-drawn axial map (ρ ≤ 0.28).</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td><strong>Neighbourhoods differ more than cities</strong>: within-city spread of agreement is an order of magnitude larger than the Copenhagen–Mumbai difference.</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="read" class="level2">
-<h2 class="anchored" data-anchor-id="read">Read</h2>
-<ul>
-<li><strong><a href="./report.html">Report</a></strong>: definitions, method, results, implications, reporting checklist.</li>
-<li><strong><a href="./dashboard.html">Interactive dashboard</a></strong>: every measure on the map, any two compared, by radius.</li>
-<li><strong><a href="./atlas/index.html">Map atlas</a></strong>: every map, with captions computed from the data.</li>
-<li><strong><a href="./nuances.html">Nuance catalogue</a></strong>: 33 conventions in depthmapX, cityseer and OSMnx that change results.</li>
-<li><strong><a href="./glossary.html">Glossary</a></strong>.</li>
-<li><strong>Work-package reports</strong>: <a href="./results/phase0/index.html">Phase 0</a> · <a href="./results/fidelity_barnsbury.html">fidelity check</a> · <a href="./results/phase1/wp1_tiles.html">WP1 tiles</a> · <a href="./results/phase1/wp2_cleaning_sensitivity.html">WP2 cleaning</a> · <a href="./results/phase1/wp2b_consolidation_stubs.html">WP2b stubs</a> · <a href="./results/phase1/wp3_nested_extents.html">WP3 nested extents</a> · <a href="./results/phase1/wp4_axial.html">WP4 axial</a>.</li>
-<li><strong><a href="./reproduce.html">Reproduce</a></strong>: environment, depthmapX build, and the pipeline commands.</li>
-</ul>
-</section>
-<section id="method-in-one-table" class="level2">
-<h2 class="anchored" data-anchor-id="method-in-one-table">Method in one table</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Rung</th>
-<th>Representation</th>
-<th>Cost</th>
-<th>Measures</th>
-<th>Engine</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>S0</td>
-<td>junction graph</td>
-<td>metric</td>
-<td>harmonic closeness, betweenness</td>
-<td>cityseer</td>
-</tr>
-<tr class="even">
-<td>S1</td>
-<td>segment graph</td>
-<td>metric</td>
-<td>harmonic, NC²/TD, betweenness</td>
-<td>cityseer</td>
-</tr>
-<tr class="odd">
-<td>S2</td>
-<td>segment graph</td>
-<td>angular</td>
-<td>NC²/TD, betweenness</td>
-<td>cityseer</td>
-</tr>
-<tr class="even">
-<td>S3</td>
-<td>straight pieces</td>
-<td>angular (tulip-1024)</td>
-<td>integration, choice, NAIN, NACH</td>
-<td>depthmapX</td>
-</tr>
-<tr class="odd">
-<td>S4</td>
-<td>generated axial lines</td>
-<td>topological</td>
-<td>integration HH, choice, intelligibility, synergy</td>
-<td>depthmapX</td>
-</tr>
-</tbody>
-</table>
-<p>Adjacent rungs differ by one design choice; their rank agreement (Spearman ρ over interior streets) measures what that choice does.</p>
-</section>
-<section id="project" class="level2">
-<h2 class="anchored" data-anchor-id="project">Project</h2>
-<p>Part of a programme on space, movement and exposure in formal and informal cities: <strong>P1</strong> Space Syntax decomposed (this site) · <strong>P2</strong> the invisible network (Dharavi’s lanes) · <strong>P3</strong> pedestrian-weighted exposure. Author: Manish Bilore. Street data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL).</p>
+
+<div class="ss-showcase">
+  <a class="ss-crop" href="atlas/index.html">
+    <img src="atlas/a13_windows.png" alt="Indre By, Colaba and Dharavi compared at the same scale under five measures">
+  </a>
+  <p>Indre By, Colaba and Dharavi, 3 × 3 km each, under the same measures. <a href="atlas/index.html">All fifty maps ›</a></p>
+</div>
+
+<div class="ss-section">
+  <h2>Six findings</h2>
+  <p class="ss-sub">Rank agreement (Spearman ρ) between measures over interior streets, both cities.</p>
+  <div class="ss-grid">
+    <div class="ss-card"><div class="ss-num">ρ ≈ 0</div><h3>Closeness and NAIN disagree</h3>
+      <p>At 400 m, metric closeness and Space Syntax integration are unrelated in both cities. Normalisation is the largest single step.</p></div>
+    <div class="ss-card"><div class="ss-num">0.6–0.8</div><h3>Choice is robust</h3>
+      <p>Axial choice tracks angular NACH at every radius in both cities; axial integration does not (0.1–0.45).</p></div>
+    <div class="ss-card"><div class="ss-num">4.2×</div><h3>Cleaning is a model choice</h3>
+      <p>Junction consolidation changes Copenhagen's street count 4.2× and moves engine agreement as much as angular cost.</p></div>
+    <div class="ss-card"><div class="ss-num">0.83</div><h3>Position beats size</h3>
+      <p>A larger map with Dharavi at its edge ranks it worse (ρ 0.83) than a 1 km centred surround (0.96).</p></div>
+    <div class="ss-card"><div class="ss-num">≤ 0.28</div><h3>Generated axial maps are not axial maps</h3>
+      <p>Axial lines generated from OSM do not reproduce a hand-drawn map, whatever the input or tolerance.</p></div>
+    <div class="ss-card"><div class="ss-num">≤ 0.04</div><h3>Neighbourhoods over cities</h3>
+      <p>City medians differ by at most 0.04; 1 km tiles within one city span 0.20–0.60.</p></div>
+  </div>
+</div>
+
+<div class="ss-section">
+  <h2>One choice at a time</h2>
+  <p class="ss-sub">Each rung changes a single design decision. The drop in agreement between rungs is what that decision does.</p>
+  <div class="ss-ladder">
+    <div class="ss-rung"><div class="ss-tag">S0</div><div class="ss-what">Junction graph</div><div class="ss-how">metric · harmonic closeness, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S1</div><div class="ss-what">Segment graph</div><div class="ss-how">metric · harmonic, NC²/TD, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S2</div><div class="ss-what">Angular cost</div><div class="ss-how">turns, not metres · NC²/TD, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S3</div><div class="ss-what">Space Syntax</div><div class="ss-how">straight pieces · NAIN, NACH · depthmapX</div></div>
+    <div class="ss-rung"><div class="ss-tag">S4</div><div class="ss-what">Axial lines</div><div class="ss-how">line changes · integration HH, choice · depthmapX</div></div>
+  </div>
+</div>
+
+<div class="ss-section ss-last">
+  <h2>Go deeper</h2>
+  <p class="ss-sub">Every number is reproducible from the code in the repository.</p>
+  <div class="ss-grid">
+    <a class="ss-card" href="report.html"><h3>Report</h3><p>Definitions, method, results, implications and a reporting checklist.</p><span class="ss-go">Read ›</span></a>
+    <a class="ss-card" href="dashboard.html"><h3>Dashboard</h3><p>Any measure on the map, any two compared, at any radius.</p><span class="ss-go">Explore ›</span></a>
+    <a class="ss-card" href="atlas/index.html"><h3>Map atlas</h3><p>Fifty maps: ladders, steps, radii, axial lines, tiles, zooms.</p><span class="ss-go">Browse ›</span></a>
+    <a class="ss-card" href="nuances.html"><h3>Nuance catalogue</h3><p>33 conventions in depthmapX, cityseer and OSMnx that change results.</p><span class="ss-go">Read ›</span></a>
+    <a class="ss-card" href="results/phase1/index.html"><h3>Work packages</h3><p>Tiles, cleaning, stubs, nested extents, axial validation.</p><span class="ss-go">Open ›</span></a>
+    <a class="ss-card" href="reproduce.html"><h3>Reproduce</h3><p>Environment, depthmapX build and the full pipeline.</p><span class="ss-go">Run ›</span></a>
+  </div>
+</div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -595,6 +537,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -922,40 +869,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
