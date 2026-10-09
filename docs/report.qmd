@@ -51,7 +51,7 @@ steps for axial); Rn = no limit.
 | Segment (dual) graph | nodes = streets; linked if they share a junction |
 | Straight pieces | curved streets split into straight lines (depthmapX segment map; Turner 2007) |
 | Axial map | fewest, longest lines covering open space; nodes = lines, links = intersections (Hillier & Hanson 1984) |
-| Generated axial map (S4) | natural streets straightened (Douglas–Peucker, 8 m), ends extended 9 m to cross (Liu & Jiang 2012); not fewest-line |
+| Generated axial map (S4) | natural streets straightened (Douglas–Peucker, 8 m), ends extended 9 m to cross (Liu & Jiang 2012); a line map rather than a fewest-line map |
 | Natural street | chain of streets continuing through junctions with deflection ≤ 30°, straightest pairs first |
 | Interior / buffer | reported streets (midpoint inside boundary) / 2 km surround for full catchments |
 
@@ -266,6 +266,36 @@ Dharavi's 278 streets vs Greater Mumbai + 2 km (36,714 streets):
 
 ## Axial step (WP4)
 
+### Hand-drawn and generated axial maps
+
+A hand-drawn axial map is the original Space Syntax input (Hillier & Hanson 1984): an analyst draws,
+over a plan, the fewest and longest straight lines that pass through every accessible open space.
+Each line is one line of sight and movement; measures count line changes.
+
+- Lines follow sight rather than the road centre: across squares, through parks, along one side of a wide street.
+- One line can run through several aligned streets.
+- "Fewest" is a whole-map criterion, so lines are not cut street by street.
+- Drawing involves judgement; two analysts can produce different maps. Algorithmic fewest-line maps
+  (Turner, Penn & Hillier 2005) need building outlines or open-space polygons rather than centrelines.
+
+No hand-drawn map exists for Copenhagen or Mumbai, so S4 uses lines generated from OSM centrelines
+(natural streets, Douglas–Peucker 8 m, ends extended 9 m). Barnsbury, the hand-drawn map shipped with
+depthmapX, tests whether that substitute holds:
+
+| | Hand-drawn | Generated from OSM |
+|---|---|---|
+| Median line length | 178 m | 40–80 m, about one line per street |
+| Position | 10–30 m off centrelines; a third through open space off the street network | on centrelines |
+| Hand-drawn line samples within 5 / 15 m of an OSM centreline | 25% / 56% | — |
+| Intelligibility r | .54 | .02–.15 (cities), .20–.27 (Barnsbury) |
+| Rank agreement with hand-drawn | — | ρ 0.04–0.28, every measure, input and tolerance |
+
+City S4 results are therefore centreline line-map results: a topological analysis of the street
+centrelines. This explains why axial choice tracks NACH (below). A like-for-like axial test needs a
+hand-drawn sample tile (Project 2, Dharavi).
+
+### Results
+
 | | Lines | Median line | Mean conn. | Intelligibility r | Synergy r |
 |---|---|---|---|---|---|
 | Copenhagen cleaned / raw | 38,831 / 54,220 | 54 / 40 m | 4.6 / 3.6 | .12 / .10 | .23 / .28 |
@@ -312,7 +342,7 @@ S4 vs angular ladder, interior streets, cleaned (raw):
 - NAIN is a modelling decision rather than a rescaling; test integration findings under NC²/TD or harmonic closeness.
 - Base findings that must survive representation, engine or cleaning on choice/NACH.
 - Report tulip bins, tie-breaking and choice counting.
-- Generated axial maps are not axial maps.
+- Treat generated axial maps as centreline line maps; axial claims need hand-drawn lines.
 - Global measures need a ~1 km surround centred on the study area.
 
 **Network analysis practice**
@@ -369,4 +399,5 @@ VGA, gate counts · Project 3: pedestrian-weighted exposure from robust measures
 - Simons, G. (2023). The cityseer Python package. *EPB: Urban Analytics and City Science*, 50(5), 1328–1344.
 - Teklenburg, J., Timmermans, H. & van Wagenberg, A. (1993). Space syntax: standardised integration measures. *Environment and Planning B*, 20(3), 347–357.
 - Turner, A. (2007). From axial to road-centre lines. *Environment and Planning B*, 34(3), 539–555.
+- Turner, A., Penn, A. & Hillier, B. (2005). An algorithmic definition of the axial map. *Environment and Planning B*, 32(3), 425–444.
 - depthmapX, SpaceGroupUCL. <https://github.com/SpaceGroupUCL/depthmapX>
