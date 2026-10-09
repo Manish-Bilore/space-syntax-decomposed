@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>nuances – Space Syntax, decomposed</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-db3f046928a8d22667e8e99954db9a8e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-95e1d8ba2b2bd61b6c579ffcbea3b055.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Space Syntax, decomposed</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html"> 
+<span class="menu-text">Report</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./dashboard.html"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./atlas/index.html"> 
+<span class="menu-text">Atlas</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-work-packages" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Work packages</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-work-packages">    
+        <li>
+    <a class="dropdown-item" href="./results/phase0/index.html">
+ <span class="dropdown-text">Phase 0 overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/results_phase0.html">
+ <span class="dropdown-text">Phase 0 tables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/fidelity_barnsbury.html">
+ <span class="dropdown-text">Fidelity check</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/index.html">
+ <span class="dropdown-text">Phase 1 summary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp1_tiles.html">
+ <span class="dropdown-text">WP1 tiles</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp2_cleaning_sensitivity.html">
+ <span class="dropdown-text">WP2 cleaning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp2_sensitivity_tables.html">
+ <span class="dropdown-text">WP2 tables</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp2b_consolidation_stubs.html">
+ <span class="dropdown-text">WP2b stubs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp3_nested_extents.html">
+ <span class="dropdown-text">WP3 nested extents</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./results/phase1/wp4_axial.html">
+ <span class="dropdown-text">WP4 axial</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossary</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./nuances.html" aria-current="page"> 
+<span class="menu-text">Nuances</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reproduce" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Reproduce</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-reproduce">    
+        <li>
+    <a class="dropdown-item" href="./reproduce.html">
+ <span class="dropdown-text">Pipeline</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./depthmapx_build.html">
+ <span class="dropdown-text">Building depthmapX</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Manish-Bilore/space-syntax-decomposed"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#nuance-catalogue" id="toc-nuance-catalogue" class="nav-link active" data-scroll-target="#nuance-catalogue">Nuance catalogue</a>
+  <ul class="collapse">
+  <li><a href="#axial-topological-analysis" id="toc-axial-topological-analysis" class="nav-link" data-scroll-target="#axial-topological-analysis">Axial (topological) analysis</a></li>
+  <li><a href="#angular-segment-analysis" id="toc-angular-segment-analysis" class="nav-link" data-scroll-target="#angular-segment-analysis">Angular segment analysis</a></li>
+  <li><a href="#graph-construction-before-any-measure" id="toc-graph-construction-before-any-measure" class="nav-link" data-scroll-target="#graph-construction-before-any-measure">Graph construction (before any measure)</a></li>
+  <li><a href="#ladder-s0-to-s3-on-real-networks" id="toc-ladder-s0-to-s3-on-real-networks" class="nav-link" data-scroll-target="#ladder-s0-to-s3-on-real-networks">Ladder (S0 to S3) on real networks</a></li>
+  <li><a href="#axial-maps-s4" id="toc-axial-maps-s4" class="nav-link" data-scroll-target="#axial-maps-s4">Axial maps (S4)</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Manish-Bilore/space-syntax-decomposed/blob/main/nuances.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/Manish-Bilore/space-syntax-decomposed/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<section id="nuance-catalogue" class="level1">
+<h1>Nuance catalogue</h1>
+<p>Findings from reimplementing Space Syntax measures and checking them against depthmapX (source: <code>salalib/axialmodules/axialintegration.cpp</code>, <code>salalib/segmmodules/segmtulip.cpp</code>, <code>salalib/connector.h</code>, <code>genlib/pafmath.h</code>) and against cityseer. Each entry says what the convention is, where it is in the code, and why it matters for comparison.</p>
+<p>Numbers marked <em>Barnsbury</em> come from <code>reports/fidelity_barnsbury.md</code> (depthmapX test data, London: 1,100 axial lines, 5,459 segments).</p>
+<section id="axial-topological-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="axial-topological-analysis">Axial (topological) analysis</h2>
+<ol type="1">
+<li><strong>Node count includes the root.</strong> <code>k</code> in MD, RA and the D-value is the number of lines <em>including</em> the line itself. RA = 2(MD − 1)/(k − 2). Getting this off by one shifts every integration value. <em>Barnsbury: all depth/integration columns match to ~1e-7.</em></li>
+<li><strong>Undefined, not infinite.</strong> If a line reaches everything in one step (MD = 1), RA = 0 and integration is undefined; depthmapX writes −1. Treat as missing, never as a large value.</li>
+<li><strong>Local radius means depth ≤ r</strong>, and the D-value uses the node count <em>within</em> the radius. R3 integration is therefore a different normalisation per line, not a scaled-down Rn.</li>
+<li><strong>Axial choice depends on a random seed.</strong> depthmapX picks one shortest path per pair by expanding the BFS frontier in random order. Total choice is fixed (each ordered pair at depth d contributes d − 1), but its allocation across tied routes is not. <em>Barnsbury: two random-tie runs agree at Spearman ≈ 0.99; our split-tie version agrees with depthmapX at 0.996 and has identical total choice.</em></li>
+<li><strong>Choice counts both directions.</strong> Values are ordered-pair counts (2× undirected betweenness). ‘Choice [Norm]’ divides by (k − 1)(k − 2)/2, mixing conventions.</li>
+</ol>
+</section>
+<section id="angular-segment-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="angular-segment-analysis">Angular segment analysis</h2>
+<ol start="6" type="1">
+<li><strong>Directed search.</strong> Leaving a segment costs a different turn depending on the end you leave by, so the search runs over (segment, direction) states. A segment’s depth is the lower of its two directed depths.</li>
+<li><strong>Tulip binning quantises angle.</strong> <code>-stb 1024</code> rounds each turn down to 1/256 of 90°. <em>Barnsbury: radius-n total depth matches depthmapX exactly with binning, and differs by ~0.1% with continuous angles.</em></li>
+<li><strong>Ties are broken by metric distance.</strong> Within one angular-depth bin, the metrically shorter route is expanded first (<code>connector.h</code>: bins sorted by <code>metricdepth</code>). This decides which of several equal-angle routes is “the” route. Without it, radius-limited node counts matched 93–99%; with it, 100%.</li>
+<li><strong>Metric radius is measured along the least-angle route</strong>, midpoint to midpoint (root half-length + intermediate lengths + half of the target). A street 300 m away by the shortest walk can fall outside an 800 m angular catchment if the least-angle route to it is longer. Angular “R800” is not the same catchment as metric “800 m”.</li>
+<li><strong>Angular precision changes catchments.</strong> Because of (8) and (9), switching from tulip-1024 to continuous angles changes which segments fall inside a metric radius. <em>Barnsbury, 300 sampled roots: node count changed for 20% of roots at R400, 47% at R800 and 53% at R1200 (median total-depth change ~0.2%, worst ~39%), while radius-n depth changed by ~0.1% and node count not at all.</em> Bin count is a methodological parameter to report.</li>
+<li><strong>Integration = NC²/TD</strong> (depthmapX ≥ 10). NAIN and NACH are <em>not</em> computed by depthmapX; they are post-hoc (Hillier, Yang &amp; Turner 2012): NAIN = NC^1.2/(TD + 2), NACH = log(CH + 1)/log(TD + 3). Check these constants against the paper before citing.</li>
+<li><strong>depthmapX counts angular choice per direction.</strong> A destination is credited once per directed state on the tree, so a segment approached from both ends can count twice; and walks start only from leaf states that are the segment’s lower-depth state, so some branches are never walked. The two effects pull in opposite directions. <em>Barnsbury: depthmapX’s total choice relative to a one-count-per-destination rule is −6.6% at R400, −2.4% at R800, +0.2% at R1200 and +11.2% at radius n.&nbsp;Reproducing its rule gives exact agreement for 99.1–100% of segments at every radius (residual from 32-bit float metric depths).</em> Ranks are almost unaffected (ρ &gt; 0.999), so this matters for absolute values and for NACH, not for which streets come out on top.</li>
+</ol>
+</section>
+<section id="graph-construction-before-any-measure" class="level2">
+<h2 class="anchored" data-anchor-id="graph-construction-before-any-measure">Graph construction (before any measure)</h2>
+<ol start="13" type="1">
+<li><strong>Axial to segment conversion splits at crossings and removes stubs</strong> (<code>-crsl</code>, % of line length). Barnsbury’s 1,100 lines become 5,459 segments, many a few metres long. Segment counts, and anything averaged per segment, depend on this.</li>
+<li><strong>cityseer cleans the graph</strong> (merges near-parallel edges within 1 m, drops zero-length edges and short self-loops). <em>Barnsbury: 33–38 of 5,459 segments disappear.</em> Report the loss.</li>
+<li><strong>Curves.</strong> depthmapX segments are straight; a curved OSM way must be exploded into straight pieces, which adds small turns along the curve. cityseer keeps the curve and handles bends internally. Results then have to be aggregated back to streets (we use a length-weighted mean), which is itself a choice.</li>
+</ol>
+</section>
+<section id="ladder-s0-to-s3-on-real-networks" class="level2">
+<h2 class="anchored" data-anchor-id="ladder-s0-to-s3-on-real-networks">Ladder (S0 to S3) on real networks</h2>
+<p>Full tables: <code>reports/results_phase0.md</code> (Copenhagen + Frederiksberg, Mumbai City District, OSM walk networks, radii 400–2000 m).</p>
+<ol start="16" type="1">
+<li><strong>No single step explains the SS-vs-network gap.</strong> Angular cost, engine conventions and SS normalisation each reorder streets by similar amounts. End to end, metric closeness and NAIN are near-unrelated at 400 m (ρ ≈ 0 in both cities). The Barnsbury test map, with its axial stubs, had suggested betweenness was robust; on OSM data it is not (ρ 0.39–0.65).</li>
+<li><strong>Normalisation is the largest single step for closeness</strong>; the closeness formula (harmonic vs NC²/TD) is the smallest (ρ ≈ 0.98). The exponent on NC sets how much network density is rewarded.</li>
+<li><strong>Engine disagreement shrinks with radius</strong>, and does not go away when curves are replaced by chords. It is mostly produced by junction consolidation (nuance 22); catchment conventions (nuance 9) are secondary.</li>
+<li><strong>Curve explosion inflates NAIN/NACH</strong>, because NC and TD count straight pieces. Chords raise their agreement by 0.04–0.11 while leaving raw measures almost unchanged.</li>
+<li><strong>OSM under-maps Mumbai’s lanes</strong>: 14.5 km of walk network per km² vs Copenhagen’s 23.0, despite far denser built fabric. All Mumbai results are the “without informal lanes” case (Project 2).</li>
+<li><strong>cityseer results at one radius depend on the other radii requested.</strong> Deterministic run to run, but Mumbai S2 at 800 m changes when 1200/2000 m are in the same call (betweenness metric to angular ρ 0.791 vs 0.753). Report the radius set with every cityseer result.</li>
+<li><strong>Junction consolidation is a design choice as large as angular cost.</strong> Going from 0 to 20 m changes Copenhagen’s segment count 4.2× and drops cityseer–depthmapX agreement from 0.90–0.99 to 0.54–0.92. NAIN’s reordering and the near-zero end-to-end closeness agreement at 400 m survive every setting. Details: <code>reports/phase1/wp2_cleaning_sensitivity.md</code>.</li>
+<li><strong>Compare cities by network length per km², not segment counts.</strong> The Copenhagen : Mumbai segment-density ratio runs 1.5–2.6× with consolidation; the length ratio stays 1.57–1.58×.</li>
+<li><strong>Consolidation appends stubs, and the engines read them differently.</strong> osmnx keeps each street’s line and adds a straight stub to the merged junction point. cityseer joins streets only at end points, so routes pass along the stubs and angular cost inflates; depthmapX joins pieces at any shared end point, so cost is unchanged but each stub is an extra piece in NC. Verified on a synthetic junction (<code>reports/phase1/wp2b_consolidation_stubs.md</code>).</li>
+<li><strong>Within a city, places differ more than the two cities do.</strong> Per-tile agreement spreads 0.24–0.68 (p10–p90) against 0.06–0.10 between city medians, and tile density explains little of it (<code>reports/phase1/wp1_tiles.md</code>).</li>
+<li><strong>Removing consolidation stubs recovers about half of the lost engine agreement</strong> on the real networks (more in Mumbai, more at large radii). One street end in four or five carries a stub at 10 m. Divided roads left as two coincident streets are the next suspect.</li>
+<li><strong>Engine agreement depends on segment length relative to the radius.</strong> On stub-free networks, cityseer to depthmapX closeness agreement follows one curve against median segment ÷ radius (rank correlation −0.96, 20 points, both cities): about 0.95 at a ratio of 0.03, 0.90 at 0.08, 0.80 at 0.18. Merging duplicated carriageways does not change it.</li>
+<li><strong>Global integration of a settlement depends on where it sits in the map, more than on map size.</strong> Against Greater Mumbai, a surround centred on Dharavi reproduces its global NAIN ranking at ρ 0.96 (1 km) to 0.99 (4 km); the island city, 4× larger but with Dharavi near its edge, gets 0.83. Clipped at the settlement boundary: 0.53. Radius-bounded measures are exact once the surround reaches the radius. (<code>reports/phase1/wp3_nested_extents.md</code>)</li>
+</ol>
+</section>
+<section id="axial-maps-s4" class="level2">
+<h2 class="anchored" data-anchor-id="axial-maps-s4">Axial maps (S4)</h2>
+<ol start="29" type="1">
+<li><strong>A generated axial map is not a fewest-line map.</strong> Lines are built from centrelines (natural streets, Douglas-Peucker at tolerance <code>tol</code>, ends extended by <code>tol + 1</code> m so lines meeting at a junction cross). Line count is set by stroke curvature, not by the fewest-line criterion, and depthmapX analyses the lines as given. Report <code>tol</code> and the stroke angle with every S4 result.</li>
+<li><strong>Extension buys connections.</strong> Ends must be extended for lines that meet at a junction to cross, but the extension also reaches nearby streets. <em>Barnsbury self-check: mean connectivity 4.00 in the reference, 4.14 at tol 4 m, 4.29 at tol 16 m, with the same lines.</em> Connectivity and choice degrade first (ρ 0.98 to 0.97 and 0.96 to 0.95); integration least.</li>
+<li><strong>Intelligibility and synergy are properties of a line set</strong>, computed over lines, not streets. Carried to streets (length-weighted), axial values repeat along every street a line covers; per-street correlations with the ladder therefore weight long lines by the number of streets they span. (<code>reports/phase1/wp4_axial.md</code>)</li>
+<li><strong>An axial map generated from centrelines does not reproduce a hand-drawn one.</strong> On Barnsbury, OSM-generated maps agree with the hand-drawn axial map at ρ 0.04–0.28 for every measure, whether OSM content is the walk network (70% more length) or streets only (matched length, but a third of the hand-drawn lines follow non-street open space). Hand-drawn lines sit 10–30 m off centrelines. Intelligibility 0.20–0.33 vs 0.54. (<code>reports/phase1/wp4_axial.md</code>)</li>
+<li><strong>Duplicate lines vanish silently in depthmapX.</strong> Junction consolidation leaves some streets twice (multi-edges with identical geometry); depthmapX keeps one copy on import, so a tool that counts both reports extra connections at those junctions (6–13% of line connectivities on cleaned networks, &lt;1% raw). De-duplicate before comparing engines.</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/manish-bilore\.github\.io\/space-syntax-decomposed\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Manish Bilore · text and figures CC BY 4.0 · code MIT</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Manish-Bilore/space-syntax-decomposed/blob/main/nuances.md" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/Manish-Bilore/space-syntax-decomposed/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>Street data © OpenStreetMap contributors (ODbL)</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

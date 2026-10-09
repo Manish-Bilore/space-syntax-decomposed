@@ -1,0 +1,117 @@
+{
+ "sites": [
+  {
+   "site": "copenhagen_c10dp",
+   "city": "copenhagen",
+   "label": "Copenhagen + Frederiksberg (cleaned 10 m)",
+   "streets": 30051,
+   "km": 2232.1,
+   "km_per_km2": 21.64,
+   "radii": [
+    400,
+    800,
+    1200,
+    2000
+   ],
+   "bounds": [
+    12.45314,
+    55.61347,
+    12.65202,
+    55.73269
+   ],
+   "q": 100000.0,
+   "simplify_m": 2.0,
+   "windows": [
+    {
+     "key": "indre_by",
+     "name": "Indre By, Copenhagen",
+     "bounds": [
+      12.55397,
+      55.66585,
+      12.60405,
+      55.69414
+     ]
+    }
+   ]
+  },
+  {
+   "site": "mumbai_island_c10dp",
+   "city": "mumbai_island",
+   "label": "Mumbai City District (cleaned 10 m)",
+   "streets": 9594,
+   "km": 957.3,
+   "km_per_km2": 13.45,
+   "radii": [
+    400,
+    800,
+    1200,
+    2000
+   ],
+   "bounds": [
+    72.7922,
+    18.89404,
+    72.88031,
+    19.05319
+   ],
+   "q": 100000.0,
+   "simplify_m": 2.0,
+   "windows": [
+    {
+     "key": "colaba",
+     "name": "Colaba, Mumbai",
+     "bounds": [
+      72.80559,
+      18.89829,
+      72.83441,
+      18.92571
+     ]
+    },
+    {
+     "key": "dharavi",
+     "name": "Dharavi, Mumbai",
+     "bounds": [
+      72.84058,
+      19.02629,
+      72.86942,
+      19.05371
+     ]
+    }
+   ]
+  }
+ ],
+ "windows": [
+  {
+   "site": "copenhagen_c10dp",
+   "window": "indre_by",
+   "name": "Indre By, Copenhagen",
+   "streets": 3563,
+   "streets_per_km2": 395.889,
+   "network_km_per_km2": 27.947,
+   "median_street_m": 59.295,
+   "rho_S3_nain_800_vs_S1_harmonic_800": 0.469,
+   "rho_nain_vs_nach": 0.587
+  },
+  {
+   "site": "mumbai_island_c10dp",
+   "window": "colaba",
+   "name": "Colaba, Mumbai",
+   "streets": 784,
+   "streets_per_km2": 87.111,
+   "network_km_per_km2": 7.71,
+   "median_street_m": 67.98,
+   "rho_S3_nain_800_vs_S1_harmonic_800": 0.393,
+   "rho_nain_vs_nach": 0.626
+  },
+  {
+   "site": "mumbai_island_c10dp",
+   "window": "dharavi",
+   "name": "Dharavi, Mumbai",
+   "streets": 1358,
+   "streets_per_km2": 150.889,
+   "network_km_per_km2": 14.015,
+   "median_street_m": 67.838,
+   "rho_S3_nain_800_vs_S1_harmonic_800": 0.173,
+   "rho_nain_vs_nach": 0.578
+  }
+ ]
+}
