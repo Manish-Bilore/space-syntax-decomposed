@@ -13,9 +13,12 @@
   const DIV7_DARK = ["#5598e7", "#2a78d6", "#1c5cab", "#48484a", "#8f2a2a", "#e34948", "#ff8a80"];
   const DIV_W = [2.6, 1.7, 1.0, 0.45, 1.0, 1.7, 2.6];
   const TILES = {
-    light: ["https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", "https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"],
-    dark: ["https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png", "https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"],
+    // Esri Light / Dark Gray Canvas (no API key; attribution required)
+    light: ["https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"],
+    dark: ["https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}"],
   };
+  const BASE_ATTR = "Basemap © Esri, HERE, Garmin, © OpenStreetMap contributors · Streets © OpenStreetMap contributors (ODbL)";
+  const BASE_OP = () => (dark ? 0.85 : 0.9);
   const MEASURES = [
     { id: "S0_harmonic", label: "S0 · junction graph, metric harmonic", fam: "closeness", r: true },
     { id: "S1_harmonic", label: "S1 · segment graph, metric harmonic", fam: "closeness", r: true },
@@ -138,10 +141,10 @@
     map = new maplibregl.Map({
       container: "dash-map", attributionControl: { compact: true },
       style: { version: 8, sources: {
-          base: { type: "raster", tileSize: 256, maxzoom: 19, tiles: TILES[dark ? "dark" : "light"],
-            attribution: "© OpenStreetMap contributors © CARTO" } },
+          base: { type: "raster", tileSize: 256, maxzoom: 16, tiles: TILES[dark ? "dark" : "light"],
+            attribution: BASE_ATTR } },
         layers: [{ id: "bg", type: "background", paint: { "background-color": dark ? "#000000" : "#fbfbfd" } },
-                 { id: "base", type: "raster", source: "base", paint: { "raster-opacity": dark ? 0.7 : 0.55 } }] },
+                 { id: "base", type: "raster", source: "base", paint: { "raster-opacity": BASE_OP() } }] },
       center: [0, 0], zoom: 1, dragRotate: false, pitchWithRotate: false,
     });
     map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: false }), "top-right");
@@ -182,13 +185,13 @@
     dark = isDark();
     if (!map || !ready) return;
     map.setPaintProperty("bg", "background-color", dark ? "#000000" : "#fbfbfd");
-    map.setPaintProperty("base", "raster-opacity", dark ? 0.7 : 0.55);
+    
     const vis = map.getLayoutProperty("base", "visibility") || "visible";
     map.removeLayer("base"); map.removeSource("base");
-    map.addSource("base", { type: "raster", tileSize: 256, maxzoom: 19, tiles: TILES[dark ? "dark" : "light"],
-      attribution: "© OpenStreetMap contributors © CARTO" });
+    map.addSource("base", { type: "raster", tileSize: 256, maxzoom: 16, tiles: TILES[dark ? "dark" : "light"],
+      attribution: BASE_ATTR });
     map.addLayer({ id: "base", type: "raster", source: "base", layout: { visibility: vis },
-      paint: { "raster-opacity": dark ? 0.7 : 0.55 } }, "streets");
+      paint: { "raster-opacity": BASE_OP() } }, "streets");
     map.setPaintProperty("streets", "line-color", colorExpr());
     if (cur) { legend(); scatter(); agreementChart(); }
   }

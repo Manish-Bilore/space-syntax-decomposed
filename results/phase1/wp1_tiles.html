@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -319,14 +319,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Density explains little.</strong> Seven of the eight correlations between tile density and agreement are below 0.3 in size. The exception is NAIN in Copenhagen (0.39): denser tiles show somewhat more agreement between NC²/TD and NAIN. The Phase 0 hypothesis that divergence follows how densely the network is mapped is not supported at this scale.</li>
 <li><strong>Places differ more than cities do.</strong> The spread across tiles within one city (p10 to p90) is 0.24–0.68 wide, against differences of 0.06–0.10 between the two city medians. “Mumbai vs Copenhagen” is a weaker contrast than “this neighbourhood vs that one”.</li>
 <li><strong>Mumbai has the longer low tail.</strong> Its 10th-percentile tile is lower on all four steps (e.g.&nbsp;NAIN 0.38 vs 0.59; betweenness end to end 0.30 vs 0.53). Some parts of Mumbai are where the two approaches disagree most. Which parts, and what they have in common, is the next thing to look at on the tile map (<code>data/&lt;site&gt;/tiles_1000.gpkg</code>).</li>
-<li><strong>Part of NAIN’s reordering is between neighbourhoods, not within them.</strong> Inside a tile, NC²/TD and NAIN agree at a median 0.81 (Copenhagen) and 0.72 (Mumbai); city-wide at 800 m the figures are 0.64 and 0.59. NAIN mostly re-ranks areas against each other by damping the effect of how many segments each area has, and re-ranks streets within an area less.</li>
+<li><strong>Part of NAIN’s reordering is between neighbourhoods rather than within them.</strong> Inside a tile, NC²/TD and NAIN agree at a median 0.81 (Copenhagen) and 0.72 (Mumbai); city-wide at 800 m the figures are 0.64 and 0.59. NAIN mostly re-ranks areas against each other by damping the effect of how many segments each area has, and re-ranks streets within an area less.</li>
 </ol>
 </section>
 <section id="limits" class="level2">
 <h2 class="anchored" data-anchor-id="limits">Limits</h2>
 <ul>
 <li>The first table was computed on the 10 m network with consolidation stubs; the rerun below uses the cleaned baseline and supersedes it.</li>
-<li>Within-tile ρ rests on 50 to a few hundred segments and a narrower range of values, so individual tiles are noisy; read the distribution, not single tiles.</li>
+<li>Within-tile ρ rests on 50 to a few hundred segments and a narrower range of values, so individual tiles are noisy; read the distribution rather than single tiles.</li>
 <li>One tile size and one radius. 2 km tiles and R400 are the obvious checks.</li>
 </ul>
 </section>

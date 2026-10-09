@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -366,7 +366,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>One parameter (junction consolidation 0 to 20 m) changes Copenhagen’s segment count 4.2× and drops cityseer–depthmapX agreement from 0.90–0.99 to 0.54–0.92.</li>
 <li>Mechanism: osmnx consolidation appends stubs at merged junctions; cityseer routes along them (angular cost up), depthmapX counts them as pieces (NC up). Removing stubs recovers about half of the lost agreement; the rest follows <strong>median segment length ÷ radius</strong> (rank correlation −0.96 across 20 runs, both cities). Merging dual carriageways does not change it.</li>
-<li>Compare cities by network length per km² (ratio 1.57–1.58 at every setting), not by segment counts (ratio 1.5–2.6 depending on cleaning).</li>
+<li>Compare cities by network length per km² (ratio 1.57–1.58 at every setting) rather than by segment counts (ratio 1.5–2.6 depending on cleaning).</li>
 </ul>
 <p>Maps: <code>a11_cleaning_*</code> (same window, raw vs cleaned); <code>figures/fig6</code>, <code>fig7</code>.</p>
 </section>
@@ -424,7 +424,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <ul>
-<li><strong>Generated maps do not reproduce a hand-drawn one.</strong> On Barnsbury, OSM-generated maps agree with the hand-drawn axial map at ρ 0.04–0.28 for every measure, with walk or streets-only OSM, at every tolerance. Hand-drawn lines run 10–30 m off centrelines and a third follow open space that is not a street; the walk network adds 70% more length than the hand-drawn map holds.</li>
+<li><strong>Generated maps do not reproduce a hand-drawn one.</strong> On Barnsbury, OSM-generated maps agree with the hand-drawn axial map at ρ 0.04–0.28 for every measure, with walk or streets-only OSM, at every tolerance. Hand-drawn lines run 10–30 m off centrelines and a third follow open space off the street network; the walk network adds 70% more length than the hand-drawn map holds.</li>
 <li><strong>Axial choice is the bridge</strong>: it tracks angular NACH at ρ 0.6–0.8 in both cities, at every radius. Axial integration Rn does not (0.1–0.45).</li>
 <li>Intelligibility is near zero in both cities, and cleaning moves it more than the city does.</li>
 <li>Global axial integration vs metric closeness: Copenhagen rises to 0.68 at 2 km; Mumbai stays near 0. The island city is a long peninsula, so global depth tracks position along it (cf.&nbsp;3.4).</li>
@@ -447,7 +447,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Mumbai’s OSM network omits most informal lanes; all Mumbai results are a lower bound on what the informal fabric changes.</li>
 <li>No empirical movement data yet (WP5: Copenhagen counts; Project 2: Dharavi gate counts). The project compares methods, it does not validate either against behaviour.</li>
-<li>One cleaning pipeline (osmnx); one SS engine (depthmapX). S4 is a generated line map, not a fewest-line or hand-drawn axial map.</li>
+<li>One cleaning pipeline (osmnx); one SS engine (depthmapX). S4 is a generated line map rather than a fewest-line or hand-drawn axial map.</li>
 <li>Coincident duplicate streets remain in the cleaned networks for S0–S3 (≈ 0.7% of Mumbai’s lines); depthmapX drops them, cityseer keeps them.</li>
 </ul>
 </section>
@@ -462,7 +462,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="atlas-index" class="level2">
 <h2 class="anchored" data-anchor-id="atlas-index">Atlas index</h2>
-<p><code>reports/atlas/atlas.md</code> lists every map with an auto-generated caption (ρ values computed from the data). Classes are quintiles within each panel: ranks, not raw values, are comparable across panels and cities. Divergence maps show the percentile-rank difference between two measures, thin grey where they agree within 10 points.</p>
+<p><code>reports/atlas/atlas.md</code> lists every map with an auto-generated caption (ρ values computed from the data). Classes are quintiles within each panel: ranks rather than raw values are comparable across panels and cities. Divergence maps show the percentile-rank difference between two measures, thin grey where they agree within 10 points.</p>
 
 
 </section>

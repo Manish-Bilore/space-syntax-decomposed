@@ -73,8 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -419,11 +419,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>Read only as a pipeline check (the map is the depthmapX test map, not a city), but the pattern is the one to look for in the cities:</p>
+<p>Read only as a pipeline check (the map is the depthmapX test map rather than a city), but the pattern is the one to look for in the cities:</p>
 <ul>
 <li><strong>Axial R3 tracks angular NAIN at 800 m (ρ 0.82) better than axial Rn does (0.57).</strong> Three topological steps is a local measure, of roughly walking-catchment size here.</li>
 <li><strong>Axial global integration is unrelated or opposed to metric closeness</strong> (ρ −0.18 to −0.25): long straight lines count as one step regardless of length, so a long peripheral line can be globally integrated while metrically remote.</li>
-<li><strong>Axial choice agrees weakly with angular NACH</strong> (0.38–0.53): topological shortest paths have many ties (nuance 4) and count line changes, not turns.</li>
+<li><strong>Axial choice agrees weakly with angular NACH</strong> (0.38–0.53): topological shortest paths have many ties (nuance 4) and count line changes rather than turns.</li>
 <li>Barnsbury intelligibility r = 0.54 (r² 0.29), synergy r = 0.72–0.76.</li>
 </ul>
 </section>
@@ -615,12 +615,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p>Provisional reading (pending the coverage diagnostic below):</p>
 <ol type="1">
-<li><strong>Generated lines are 3–4× shorter than hand-drawn axial lines</strong> (median 40–80 m vs 178 m) and near one per street. They behave as a line-based topological analysis of the centrelines, not as a fewest-line axial map.</li>
+<li><strong>Generated lines are 3–4× shorter than hand-drawn axial lines</strong> (median 40–80 m vs 178 m) and near one per street. They behave as a line-based topological analysis of the centrelines rather than as a fewest-line axial map.</li>
 <li><strong>Intelligibility is near zero in both cities (r 0.02–0.15)</strong>, synergy 0.15–0.33. The city difference is smaller than the cleaning difference (Mumbai interior intelligibility 0.02 at c10dp, 0.15 at c0), and both are far below the hand-drawn Barnsbury map (0.54).</li>
-<li><strong>Tolerance moves the map, not the ranking.</strong> tol 4 to 16 m: lines 51k to 29k, mean connectivity 4.10 to 5.38, intelligibility 0.12 to 0.14; every ladder ρ moves by ≤ 0.05.</li>
+<li><strong>Tolerance moves the map and leaves the ranking.</strong> tol 4 to 16 m: lines 51k to 29k, mean connectivity 4.10 to 5.38, intelligibility 0.12 to 0.14; every ladder ρ moves by ≤ 0.05.</li>
 <li><strong>Axial choice is the bridge between the representations</strong> (ρ 0.6–0.8 with angular NACH at every radius, both cities); axial integration Rn is not (0.1–0.45).</li>
 <li><strong>City contrast in global axial integration vs metric closeness:</strong> Copenhagen rises to 0.68 at 2 km; Mumbai island stays at −0.06 to 0.17. The island city is a long peninsula, so Rn depth is set by position along it (cf.&nbsp;WP3: global measures follow map shape and position).</li>
-<li>The 6–13% connectivity mismatch on c10dp was duplicate streets, not depthmapX (see below).</li>
+<li>The 6–13% connectivity mismatch on c10dp was duplicate streets rather than depthmapX (see below).</li>
 </ol>
 </section>
 <section id="barnsbury-osm-generated-vs-hand-drawn-first-run" class="level2">
@@ -698,7 +698,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p><strong>Coverage diagnostic (<code>11_axial_diag.py coverage</code>): no offset; the maps differ in content and line placement.</strong></p>
 <ul>
-<li>Offset scan: best shift (0, −1 m), recall within 5 m 0.247 to 0.249. Not a datum/grid shift.</li>
+<li>Offset scan: best shift (0, −1 m), recall within 5 m 0.247 to 0.249. This rules out a datum/grid shift.</li>
 <li>Distance from reference samples to the nearest OSM centreline: 25% within 5 m, 56% within 15 m, 75% within 25 m, 95% within 50 m. Hand-drawn axial lines run through open space (corner to corner, across squares, straight through gentle bends), typically 10–30 m off the centreline.</li>
 <li>Content: OSM walk network 24.2 km/km² inside the hull vs 14.3 km/km² in the reference. About 40% of OSM length (footways, estate paths, service roads) has no counterpart in the hand-drawn map.</li>
 <li>Matched share does not vary with reference line length (0.54–0.58); it is lowest in the core (0.51–0.52) and highest at the edge (0.63).</li>
@@ -827,7 +827,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Rank agreement with the hand-drawn map stays at ρ 0.04–0.28 for every measure, content choice, tolerance and matching radius.</strong> Agreement is not limited by matching: lines that coincide in space still carry different values, because axial values depend on the topology of the whole map.</li>
 <li>Intelligibility and synergy rise with tolerance and with streets-only content (longer, fewer lines) but stay well below the hand-drawn map (0.33 / 0.55 at best vs 0.54 / 0.72).</li>
 </ul>
-<p><strong>Conclusion for S4.</strong> An axial map generated from OSM centrelines is a separate representation. It does not stand in for hand-drawn axial analysis (ρ ≤ 0.28 on Barnsbury). It relates more closely to the angular segment rung (axial choice vs NACH ρ 0.6–0.8 in both cities) than to the axial map it imitates. City S4 results are reported as “centreline line-map” results, not as axial-map results. A like-for-like axial comparison needs hand-drawn lines (P2 sample tile with a written protocol).</p>
+<p><strong>Conclusion for S4.</strong> An axial map generated from OSM centrelines is a separate representation. It does not stand in for hand-drawn axial analysis (ρ ≤ 0.28 on Barnsbury). It relates more closely to the angular segment rung (axial choice vs NACH ρ 0.6–0.8 in both cities) than to the axial map it imitates. City S4 results are reported as “centreline line-map” results rather than as axial-map results. A like-for-like axial comparison needs hand-drawn lines (P2 sample tile with a written protocol).</p>
 <p><strong>Connection diagnostic: resolved, no effect on the results.</strong> The Mumbai c10dp line file has 78 exactly coincident axial lines (the same street present twice in the cleaned network, as multi-edges left by junction consolidation). depthmapX drops duplicates on import, so it analyses 10,009 lines; the geometric test counted both copies, giving every neighbour one extra connection. The earlier “missed crossings at merged junctions” were this plus a mapping bug in the diagnostic (one depthmapX Ref standing for two of our rows). With duplicates removed, depthmapX and the geometric test agree on 100% of lines. depthmapX had analysed the de-duplicated map all along, so the city S4 values above stand; only the “dmX = geometric conn.” column was measuring duplicates (c10dp has more because consolidation creates the multi-edges). The generator now merges coincident lines itself (<code>axial_lines</code>, lineage merged), so the check reads 100% on rerun.</p>
 </section>
 <section id="pending-local-runs" class="level2">
@@ -864,7 +864,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="limits" class="level2">
 <h2 class="anchored" data-anchor-id="limits">Limits</h2>
 <ul>
-<li>Not a fewest-line map; no unlinks for bridges and flyovers (Mumbai has many; Project 2 may add an unlink list from OSM <code>bridge</code>/<code>tunnel</code> tags).</li>
+<li>A line map rather than a fewest-line map; no unlinks for bridges and flyovers (Mumbai has many; Project 2 may add an unlink list from OSM <code>bridge</code>/<code>tunnel</code> tags).</li>
 <li>Extension adds connections; <code>tol</code> and stroke angle change the map and are reported.</li>
 <li>Six interior streets of ~1 cm (degenerate geometry) get no S4 value.</li>
 <li>Intelligibility is known to fall with map size; the two cities’ maps differ in size, so compare them at matched extents (WP3 extents) before reading a city difference into it.</li>

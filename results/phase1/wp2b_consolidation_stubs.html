@@ -73,8 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -247,7 +247,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#result-on-the-real-networks-8-oct-2026" id="toc-result-on-the-real-networks-8-oct-2026" class="nav-link" data-scroll-target="#result-on-the-real-networks-8-oct-2026">Result on the real networks (8 Oct 2026)</a>
   <ul class="collapse">
   <li><a href="#stubs-are-common-after-consolidation" id="toc-stubs-are-common-after-consolidation" class="nav-link" data-scroll-target="#stubs-are-common-after-consolidation">Stubs are common after consolidation</a></li>
-  <li><a href="#destubbing-recovers-part-of-the-engine-agreement-not-all" id="toc-destubbing-recovers-part-of-the-engine-agreement-not-all" class="nav-link" data-scroll-target="#destubbing-recovers-part-of-the-engine-agreement-not-all">Destubbing recovers part of the engine agreement, not all</a></li>
+  <li><a href="#destubbing-recovers-part-of-the-engine-agreement" id="toc-destubbing-recovers-part-of-the-engine-agreement" class="nav-link" data-scroll-target="#destubbing-recovers-part-of-the-engine-agreement">Destubbing recovers part of the engine agreement</a></li>
   <li><a href="#duplicated-carriageways-are-not-the-cause-tested-mumbai" id="toc-duplicated-carriageways-are-not-the-cause-tested-mumbai" class="nav-link" data-scroll-target="#duplicated-carriageways-are-not-the-cause-tested-mumbai">Duplicated carriageways are not the cause (tested, Mumbai)</a></li>
   <li><a href="#what-does-explain-the-rest-segment-length-relative-to-the-radius" id="toc-what-does-explain-the-rest-segment-length-relative-to-the-radius" class="nav-link" data-scroll-target="#what-does-explain-the-rest-segment-length-relative-to-the-radius">What does explain the rest: segment length relative to the radius</a></li>
   </ul></li>
@@ -318,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>With stubs removed</strong>, both engines fall below the raw values, as they should when a dual carriageway is merged into one street.</li>
 </ul>
 <p>So consolidation does not add one error; it perturbs the two engines in different directions, which is what lowers their agreement.</p>
-<p>This is one synthetic junction. It establishes the mechanism, not its size on real networks.</p>
+<p>This is one synthetic junction. It establishes the mechanism rather than its size on real networks.</p>
 </section>
 <section id="fix" class="level2">
 <h2 class="anchored" data-anchor-id="fix">Fix</h2>
@@ -388,8 +388,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <p>At 10 m, one street end in four or five carries an artificial turn. Destubbing removes almost all of them and 22% of the straight pieces in both cities. (The 20 m networks show fewer stubs by this count, 8.5% and 16.3%, only because their stubs can be up to 20 m long and the count stops at 10 m; rerun with <code>--max-len 20</code> for that row.)</p>
 </section>
-<section id="destubbing-recovers-part-of-the-engine-agreement-not-all" class="level3">
-<h3 class="anchored" data-anchor-id="destubbing-recovers-part-of-the-engine-agreement-not-all">Destubbing recovers part of the engine agreement, not all</h3>
+<section id="destubbing-recovers-part-of-the-engine-agreement" class="level3">
+<h3 class="anchored" data-anchor-id="destubbing-recovers-part-of-the-engine-agreement">Destubbing recovers part of the engine agreement</h3>
 <p>cityseer to depthmapX, ρ at 400 / 800 / 1200 / 2000 m:</p>
 <table class="caption-top table">
 <colgroup>

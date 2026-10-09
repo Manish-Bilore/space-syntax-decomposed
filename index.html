@@ -40,8 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -224,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <style>#title-block-header { display: none; }</style>
 
 <div class="ss-hero">
-  <div class="ss-eyebrow">Copenhagen · Mumbai · OpenStreetMap</div>
+  <div class="ss-eyebrow">Copenhagen and Mumbai</div>
   <h1>Space Syntax, decomposed.</h1>
   <p class="ss-lede">Space Syntax and street-network analysis rank the same streets differently.
   We take the route from one to the other apart, one design choice at a time, and measure what each choice does, and where.</p>
@@ -242,18 +242,31 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 <div class="ss-section">
+  <div class="ss-brief">
+    <div class="ss-eyebrow">In short</div>
+    <p>We ran Space Syntax (depthmapX) and street-network analysis (cityseer) on the same streets of Copenhagen and Mumbai.
+    Most of the gap between them comes from how the data are processed: graph type, cost, normalisation, network cleaning and map extent.
+    Normalisation is the largest single step, and network cleaning alone moves agreement as much as switching from metres to turns.</p>
+    <p>Both tools describe network configuration only. depthmapX was built to analyse the spatial layout of buildings and street systems as
+    a proxy for movement potential; cityseer to compute localised centralities and land-use accessibility on street networks.
+    Neither observes movement, so the next phase adds public transport, pedestrian counts and land-use data to test which measure, if any,
+    predicts how people actually move.</p>
+  </div>
+</div>
+
+<div class="ss-section">
   <h2>Six findings</h2>
   <p class="ss-sub">Rank agreement (Spearman ρ) between measures over interior streets, both cities.</p>
   <div class="ss-grid">
     <div class="ss-card"><div class="ss-num">ρ ≈ 0</div><h3>Closeness and NAIN disagree</h3>
-      <p>At 400 m, metric closeness and Space Syntax integration are unrelated in both cities. Normalisation is the largest single step.</p></div>
+      <p>At 400 m, metric closeness and normalised angular integration (NAIN) are unrelated in both cities. Normalisation is the largest single step.</p></div>
     <div class="ss-card"><div class="ss-num">0.6–0.8</div><h3>Choice is robust</h3>
-      <p>Axial choice tracks angular NACH at every radius in both cities; axial integration does not (0.1–0.45).</p></div>
+      <p>Axial choice tracks normalised angular choice (NACH) at every radius in both cities; axial integration does not (0.1–0.45).</p></div>
     <div class="ss-card"><div class="ss-num">4.2×</div><h3>Cleaning is a model choice</h3>
       <p>Junction consolidation changes Copenhagen's street count 4.2× and moves engine agreement as much as angular cost.</p></div>
     <div class="ss-card"><div class="ss-num">0.83</div><h3>Position beats size</h3>
       <p>A larger map with Dharavi at its edge ranks it worse (ρ 0.83) than a 1 km centred surround (0.96).</p></div>
-    <div class="ss-card"><div class="ss-num">≤ 0.28</div><h3>Generated axial maps are not axial maps</h3>
+    <div class="ss-card"><div class="ss-num">≤ 0.28</div><h3>Generated lines fall short of axial maps</h3>
       <p>Axial lines generated from OSM do not reproduce a hand-drawn map, whatever the input or tolerance.</p></div>
     <div class="ss-card"><div class="ss-num">≤ 0.04</div><h3>Neighbourhoods over cities</h3>
       <p>City medians differ by at most 0.04; 1 km tiles within one city span 0.20–0.60.</p></div>
@@ -264,11 +277,11 @@ ul.task-list li input[type="checkbox"] {
   <h2>One choice at a time</h2>
   <p class="ss-sub">Each rung changes a single design decision. The drop in agreement between rungs is what that decision does.</p>
   <div class="ss-ladder">
-    <div class="ss-rung"><div class="ss-tag">S0</div><div class="ss-what">Junction graph</div><div class="ss-how">metric · harmonic closeness, betweenness · cityseer</div></div>
-    <div class="ss-rung"><div class="ss-tag">S1</div><div class="ss-what">Segment graph</div><div class="ss-how">metric · harmonic, NC²/TD, betweenness · cityseer</div></div>
-    <div class="ss-rung"><div class="ss-tag">S2</div><div class="ss-what">Angular cost</div><div class="ss-how">turns, not metres · NC²/TD, betweenness · cityseer</div></div>
-    <div class="ss-rung"><div class="ss-tag">S3</div><div class="ss-what">Space Syntax</div><div class="ss-how">straight pieces · NAIN, NACH · depthmapX</div></div>
-    <div class="ss-rung"><div class="ss-tag">S4</div><div class="ss-what">Axial lines</div><div class="ss-how">line changes · integration HH, choice · depthmapX</div></div>
+    <div class="ss-rung"><div class="ss-tag">S0</div><div class="ss-what">Junction graph</div><ul><li><span>Cost</span>Metric distance</li><li><span>Measures</span>Harmonic closeness; betweenness</li><li><span>Engine</span>cityseer</li></ul></div>
+    <div class="ss-rung"><div class="ss-tag">S1</div><div class="ss-what">Segment graph</div><ul><li><span>Cost</span>Metric distance</li><li><span>Measures</span>Harmonic closeness; NC²/TD (node count² / total depth); betweenness</li><li><span>Engine</span>cityseer</li></ul></div>
+    <div class="ss-rung"><div class="ss-tag">S2</div><div class="ss-what">Angular cost</div><ul><li><span>Cost</span>Turns instead of metres</li><li><span>Measures</span>NC²/TD; betweenness</li><li><span>Engine</span>cityseer</li></ul></div>
+    <div class="ss-rung"><div class="ss-tag">S3</div><div class="ss-what">Space Syntax</div><ul><li><span>Cost</span>Turns, on straight pieces</li><li><span>Measures</span>Normalised angular integration (NAIN); normalised angular choice (NACH)</li><li><span>Engine</span>depthmapX</li></ul></div>
+    <div class="ss-rung"><div class="ss-tag">S4</div><div class="ss-what">Axial lines</div><ul><li><span>Cost</span>Line changes</li><li><span>Measures</span>Hillier–Hanson integration (HH); axial choice</li><li><span>Engine</span>depthmapX</li></ul></div>
   </div>
 </div>
 

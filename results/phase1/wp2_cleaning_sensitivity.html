@@ -73,8 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -345,7 +345,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <ul>
-<li><strong>Segment count is not a stable property of a city.</strong> One cleaning parameter moves Copenhagen’s segment density by 4.2× and Mumbai’s by 2.4×.</li>
+<li><strong>Segment count is an unstable property of a city.</strong> One cleaning parameter moves Copenhagen’s segment density by 4.2× and Mumbai’s by 2.4×.</li>
 <li><strong>The Copenhagen : Mumbai ratio of segment density runs from 2.6 (0 m) to 1.5 (20 m).</strong> The Phase 0 statement “half the segment density” holds only at 10 m.</li>
 <li><strong>Network length per km² is stable:</strong> Copenhagen has 1.57–1.58× Mumbai’s at every setting. This is the figure to quote for the under-mapping argument.</li>
 <li>Copenhagen loses more segments to consolidation than Mumbai (÷4.2 vs ÷2.4), which fits its OSM data mapping pavements and cycle tracks as separate lines far more often.</li>
@@ -598,7 +598,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><strong>Report results at 0 m and 10 m together.</strong> Neither is “correct”: raw OSM double-counts pavements and dual carriageways; consolidation distorts geometry. The findings that survive both are the ones to stand on (finding 1).</li>
 <li><strong>For engine comparisons, use raw topology</strong>, where no geometry has been edited.</li>
-<li><strong>Quote network length per km², not segment counts</strong>, when comparing cities.</li>
+<li><strong>Quote network length per km² rather than segment counts</strong>, when comparing cities.</li>
 <li>Network cleaning is a sixth design choice in the ladder, as large as angular cost for betweenness. That is a result for the paper, and it sharpens Project 2: adding informal lanes is a change to the network of the same kind, so its effect should be read against this cleaning baseline.</li>
 </ul>
 </section>

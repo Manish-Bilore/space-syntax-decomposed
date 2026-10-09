@@ -73,8 +73,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-47fae37aab8e75faf34c3af00be22a3f.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-2e65f8c036fd9e8679913839512a70d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-be253883c7760eb556b021305f2e5ddd.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-0914a74245bf2a5802f5c7d42fcdb4b5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-b32ee2e0f351ad4ff3de9e3e0c83ff44.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -404,8 +404,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><em>Figure 1. Rank agreement at each single-change step. Dots: 800 m; bars: range over 400–2000 m. Shaded row: first rung against last.</em></p>
 <ul>
 <li><strong>The gap is several gaps.</strong> Angular cost, engine conventions and SS normalisation each reorder streets by similar amounts. End to end, metric closeness and NAIN are close to unrelated at 400 m in both cities (ρ ≈ 0).</li>
-<li><strong>Normalisation matters most; the closeness formula least.</strong> Harmonic vs NC²/TD agree at ρ ≈ 0.98, while NC²/TD to NAIN drops to 0.44–0.53 at 400 m. The exponent on NC sets how much network density counts, so choosing NAIN is a substantive decision, not a rescaling.</li>
-<li><strong>Engine disagreement has two causes.</strong> At 10 m junction consolidation cityseer and depthmapX agree at only 0.67–0.90. About half of that gap comes from stubs that consolidation appends at merged junctions. The rest follows segment length relative to the radius: the engines draw the edge of a catchment differently, which matters when segments are long compared with the radius (Phase 1 WP2–2c). Replacing curved streets with straight chords raises NAIN/NACH agreement by 0.04–0.11, because depthmapX counts straight pieces, not streets.</li>
+<li><strong>Normalisation matters most; the closeness formula least.</strong> Harmonic vs NC²/TD agree at ρ ≈ 0.98, while NC²/TD to NAIN drops to 0.44–0.53 at 400 m. The exponent on NC sets how much network density counts, so choosing NAIN is a substantive decision rather than a rescaling.</li>
+<li><strong>Engine disagreement has two causes.</strong> At 10 m junction consolidation cityseer and depthmapX agree at only 0.67–0.90. About half of that gap comes from stubs that consolidation appends at merged junctions. The rest follows segment length relative to the radius: the engines draw the edge of a catchment differently, which matters when segments are long compared with the radius (Phase 1 WP2–2c). Replacing curved streets with straight chords raises NAIN/NACH agreement by 0.04–0.11, because depthmapX counts straight pieces rather than streets.</li>
 <li><strong>The cities differ in where divergence sits.</strong> Metric vs angular cost changes Mumbai less than Copenhagen; the engine and normalisation steps change it more; end-to-end betweenness agreement is lower (0.39–0.52 vs 0.57–0.65).</li>
 </ul>
 <p>Full tables: <code>reports/results_phase0.md</code>.</p>
