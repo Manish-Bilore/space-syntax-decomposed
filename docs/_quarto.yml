@@ -7,15 +7,17 @@ project:
 
 website:
   title: "Space Syntax, decomposed"
+  open-graph: true
   description: "Which design choices make Space Syntax differ from street-network analysis? Copenhagen and Mumbai."
   site-url: https://manish-bilore.github.io/space-syntax-decomposed/
   repo-url: https://github.com/Manish-Bilore/space-syntax-decomposed
   repo-actions: [source, issue]
   page-navigation: true
+  favicon: favicon.svg
   navbar:
+    pinned: true
+    collapse-below: lg
     left:
-      - href: index.qmd
-        text: Home
       - href: report.qmd
         text: Report
       - href: dashboard.qmd
@@ -44,14 +46,14 @@ website:
             text: WP3 nested extents
           - href: results/phase1/wp4_axial.md
             text: WP4 axial
-      - href: glossary.md
-        text: Glossary
-      - href: nuances.md
-        text: Nuances
-      - text: Reproduce
+      - text: Reference
         menu:
+          - href: glossary.md
+            text: Glossary
+          - href: nuances.md
+            text: Nuance catalogue
           - href: reproduce.md
-            text: Pipeline
+            text: Reproduce the pipeline
           - href: depthmapx_build.md
             text: Building depthmapX
     right:
@@ -64,8 +66,10 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
+      light: [cosmo, styles/light.scss]
+      dark: [cosmo, styles/dark.scss]
+    smooth-scroll: true
+    link-external-newwindow: true
     toc: true
     fig-align: left
     lightbox: true

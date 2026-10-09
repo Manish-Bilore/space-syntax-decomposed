@@ -1,56 +1,75 @@
 ---
 title: "Space Syntax, decomposed"
+pagetitle: "Space Syntax, decomposed"
+page-layout: custom
 toc: false
+title-block-banner: false
+description: "Which design choices make Space Syntax differ from street-network analysis, by how much, and where? Copenhagen and Mumbai."
 ---
 
-**Which design choices make Space Syntax differ from street-network analysis, by how much, and
-where?** Tested on Copenhagen + Frederiksberg and the Mumbai island city, with every Space Syntax
-measure reimplemented in Python and matched to depthmapX.
+```{=html}
+<style>#title-block-header { display: none; }</style>
 
-![Indre By, Colaba and Dharavi at the same scale](atlas/a13_windows.png)
+<div class="ss-hero">
+  <div class="ss-eyebrow">Copenhagen · Mumbai · OpenStreetMap</div>
+  <h1>Space Syntax, decomposed.</h1>
+  <p class="ss-lede">Space Syntax and street-network analysis rank the same streets differently.
+  We take the route from one to the other apart, one design choice at a time, and measure what each choice does, and where.</p>
+  <div class="ss-ctas">
+    <a class="ss-btn primary" href="dashboard.html">Explore the dashboard</a>
+    <a class="ss-btn ghost" href="report.html">Read the report</a>
+  </div>
+</div>
 
-## Key findings
+<div class="ss-showcase">
+  <a class="ss-crop" href="atlas/index.html">
+    <img src="atlas/a13_windows.png" alt="Indre By, Colaba and Dharavi compared at the same scale under five measures">
+  </a>
+  <p>Indre By, Colaba and Dharavi, 3 × 3 km each, under the same measures. <a href="atlas/index.html">All fifty maps ›</a></p>
+</div>
 
-| | Finding |
-|---|---|
-| 1 | At walking radii, metric closeness and Space Syntax integration (NAIN) are nearly unrelated (ρ ≈ 0 at 400 m in both cities). No single step explains the gap; the **normalisation** is the largest. |
-| 2 | **Choice / betweenness is robust** across representations, engines and cleaning; integration / closeness is where the approaches part ways. |
-| 3 | **Network cleaning** (junction consolidation) is a design choice as large as angular cost; consolidation stubs disturb the two engines in opposite directions. |
-| 4 | **Map extent** matters for global measures, and **position matters more than size**. |
-| 5 | Axial maps **generated from OSM centrelines do not reproduce** a hand-drawn axial map (ρ ≤ 0.28). |
-| 6 | **Neighbourhoods differ more than cities**: within-city spread of agreement is an order of magnitude larger than the Copenhagen–Mumbai difference. |
+<div class="ss-section">
+  <h2>Six findings</h2>
+  <p class="ss-sub">Rank agreement (Spearman ρ) between measures over interior streets, both cities.</p>
+  <div class="ss-grid">
+    <div class="ss-card"><div class="ss-num">ρ ≈ 0</div><h3>Closeness and NAIN disagree</h3>
+      <p>At 400 m, metric closeness and Space Syntax integration are unrelated in both cities. Normalisation is the largest single step.</p></div>
+    <div class="ss-card"><div class="ss-num">0.6–0.8</div><h3>Choice is robust</h3>
+      <p>Axial choice tracks angular NACH at every radius in both cities; axial integration does not (0.1–0.45).</p></div>
+    <div class="ss-card"><div class="ss-num">4.2×</div><h3>Cleaning is a model choice</h3>
+      <p>Junction consolidation changes Copenhagen's street count 4.2× and moves engine agreement as much as angular cost.</p></div>
+    <div class="ss-card"><div class="ss-num">0.83</div><h3>Position beats size</h3>
+      <p>A larger map with Dharavi at its edge ranks it worse (ρ 0.83) than a 1 km centred surround (0.96).</p></div>
+    <div class="ss-card"><div class="ss-num">≤ 0.28</div><h3>Generated axial maps are not axial maps</h3>
+      <p>Axial lines generated from OSM do not reproduce a hand-drawn map, whatever the input or tolerance.</p></div>
+    <div class="ss-card"><div class="ss-num">≤ 0.04</div><h3>Neighbourhoods over cities</h3>
+      <p>City medians differ by at most 0.04; 1 km tiles within one city span 0.20–0.60.</p></div>
+  </div>
+</div>
 
-## Read
+<div class="ss-section">
+  <h2>One choice at a time</h2>
+  <p class="ss-sub">Each rung changes a single design decision. The drop in agreement between rungs is what that decision does.</p>
+  <div class="ss-ladder">
+    <div class="ss-rung"><div class="ss-tag">S0</div><div class="ss-what">Junction graph</div><div class="ss-how">metric · harmonic closeness, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S1</div><div class="ss-what">Segment graph</div><div class="ss-how">metric · harmonic, NC²/TD, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S2</div><div class="ss-what">Angular cost</div><div class="ss-how">turns, not metres · NC²/TD, betweenness · cityseer</div></div>
+    <div class="ss-rung"><div class="ss-tag">S3</div><div class="ss-what">Space Syntax</div><div class="ss-how">straight pieces · NAIN, NACH · depthmapX</div></div>
+    <div class="ss-rung"><div class="ss-tag">S4</div><div class="ss-what">Axial lines</div><div class="ss-how">line changes · integration HH, choice · depthmapX</div></div>
+  </div>
+</div>
 
-- **[Report](report.qmd)**: definitions, method, results, implications, reporting checklist.
-- **[Interactive dashboard](dashboard.qmd)**: every measure on the map, any two compared, by radius.
-- **[Map atlas](atlas/index.md)**: every map, with captions computed from the data.
-- **[Nuance catalogue](nuances.md)**: 33 conventions in depthmapX, cityseer and OSMnx that change results.
-- **[Glossary](glossary.md)**.
-- **Work-package reports**: [Phase 0](results/phase0/index.md) ·
-  [fidelity check](results/fidelity_barnsbury.md) · [WP1 tiles](results/phase1/wp1_tiles.md) ·
-  [WP2 cleaning](results/phase1/wp2_cleaning_sensitivity.md) ·
-  [WP2b stubs](results/phase1/wp2b_consolidation_stubs.md) ·
-  [WP3 nested extents](results/phase1/wp3_nested_extents.md) ·
-  [WP4 axial](results/phase1/wp4_axial.md).
-- **[Reproduce](reproduce.md)**: environment, depthmapX build, and the pipeline commands.
+<div class="ss-section ss-last">
+  <h2>Go deeper</h2>
+  <p class="ss-sub">Every number is reproducible from the code in the repository.</p>
+  <div class="ss-grid">
+    <a class="ss-card" href="report.html"><h3>Report</h3><p>Definitions, method, results, implications and a reporting checklist.</p><span class="ss-go">Read ›</span></a>
+    <a class="ss-card" href="dashboard.html"><h3>Dashboard</h3><p>Any measure on the map, any two compared, at any radius.</p><span class="ss-go">Explore ›</span></a>
+    <a class="ss-card" href="atlas/index.html"><h3>Map atlas</h3><p>Fifty maps: ladders, steps, radii, axial lines, tiles, zooms.</p><span class="ss-go">Browse ›</span></a>
+    <a class="ss-card" href="nuances.html"><h3>Nuance catalogue</h3><p>33 conventions in depthmapX, cityseer and OSMnx that change results.</p><span class="ss-go">Read ›</span></a>
+    <a class="ss-card" href="results/phase1/index.html"><h3>Work packages</h3><p>Tiles, cleaning, stubs, nested extents, axial validation.</p><span class="ss-go">Open ›</span></a>
+    <a class="ss-card" href="reproduce.html"><h3>Reproduce</h3><p>Environment, depthmapX build and the full pipeline.</p><span class="ss-go">Run ›</span></a>
+  </div>
+</div>
 
-## Method in one table
-
-| Rung | Representation | Cost | Measures | Engine |
-|---|---|---|---|---|
-| S0 | junction graph | metric | harmonic closeness, betweenness | cityseer |
-| S1 | segment graph | metric | harmonic, NC²/TD, betweenness | cityseer |
-| S2 | segment graph | angular | NC²/TD, betweenness | cityseer |
-| S3 | straight pieces | angular (tulip-1024) | integration, choice, NAIN, NACH | depthmapX |
-| S4 | generated axial lines | topological | integration HH, choice, intelligibility, synergy | depthmapX |
-
-Adjacent rungs differ by one design choice; their rank agreement (Spearman ρ over interior
-streets) measures what that choice does.
-
-## Project
-
-Part of a programme on space, movement and exposure in formal and informal cities:
-**P1** Space Syntax decomposed (this site) · **P2** the invisible network (Dharavi's lanes) ·
-**P3** pedestrian-weighted exposure. Author: Manish Bilore.
-Street data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL).
+```

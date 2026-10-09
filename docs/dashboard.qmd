@@ -1,7 +1,8 @@
 ---
 title: "Dashboard"
-title-block-banner: false
+pagetitle: "Dashboard · Space Syntax, decomposed"
 page-layout: custom
+title-block-banner: false
 section-divs: false
 toc: false
 include-in-header:
@@ -14,41 +15,60 @@ include-in-header:
 
 ```{=html}
 <div class="dash">
-  <div class="dash-side">
-    <h2>Explore the ladder</h2>
-    <label>Study area<select id="dash-site"></select></label>
-    <label>Quick comparison<select id="dash-preset"></select></label>
-    <fieldset class="dash-mode">
-      <label><input type="radio" name="dash-mode" value="one" checked> One measure</label>
-      <label><input type="radio" name="dash-mode" value="compare"> Compare A and B</label>
-    </fieldset>
-    <label>Measure A<select id="dash-a"></select></label>
-    <label id="dash-b-row" style="display:none">Measure B<select id="dash-b"></select></label>
-    <label id="dash-radius-row">Radius (m)<select id="dash-radius"></select></label>
-    <label class="inline"><input type="checkbox" id="dash-base" checked> Basemap</label>
-    <h3>Zoom to</h3>
-    <div id="dash-windows"></div>
-    <p class="muted small">Values are percentile ranks within the study area (interior streets).
-      Compare mode maps A minus B: red where A ranks a street higher, blue where B does, grey
-      within 10 points. Street data © OpenStreetMap contributors (ODbL).</p>
+  <div class="dash-side card">
+    <div class="dash-brand">Explore the ladder</div>
+    <p class="dash-hint">Pick a study area and a measure, or a ready-made comparison.</p>
+
+    <label class="field"><span>Study area</span>
+      <select id="dash-site" aria-label="Study area"></select></label>
+
+    <div class="field"><span>View</span>
+      <div class="seg" id="dash-mode" role="tablist" aria-label="View">
+        <button role="tab" data-v="one" class="on">One measure</button>
+        <button role="tab" data-v="compare">Compare</button>
+      </div></div>
+
+    <label class="field"><span>Quick comparison</span>
+      <select id="dash-preset" aria-label="Quick comparison"></select></label>
+
+    <label class="field"><span id="dash-a-label">Measure</span>
+      <select id="dash-a" aria-label="Measure A"></select></label>
+
+    <label class="field" id="dash-b-row" hidden><span>Measure B</span>
+      <select id="dash-b" aria-label="Measure B"></select></label>
+
+    <div class="field" id="dash-radius-row"><span>Radius</span>
+      <div class="seg" id="dash-radius" role="tablist" aria-label="Radius"></div></div>
+
+    <div class="field"><span>Zoom to</span>
+      <div id="dash-windows" class="pills"></div></div>
+
+    <label class="toggle"><input type="checkbox" id="dash-base" checked><i></i><span>Basemap</span></label>
+
+    <p class="dash-note">Values are percentile ranks among the study area's interior streets.
+      Compare maps A minus B: red where A ranks a street higher, blue where B does, grey within
+      10 points. Street data © OpenStreetMap contributors (ODbL).</p>
   </div>
+
   <div class="dash-main">
-    <div id="dash-head"></div>
-    <div class="dash-mapwrap">
+    <div id="dash-head" class="dash-head"></div>
+    <div class="dash-mapwrap card">
       <div id="dash-map"></div>
-      <div id="dash-legend"></div>
+      <div id="dash-legend" class="glass"></div>
       <div id="dash-tip"></div>
-      <div id="dash-status"></div>
+      <div id="dash-status" class="glass"><div class="spin"></div><span>Loading map data…</span></div>
     </div>
   </div>
+
   <div class="dash-right">
-    <section>
-      <h3>A against B</h3>
-      <canvas id="dash-scatter" width="340" height="260"></canvas>
-      <div id="dash-rho" class="small"></div>
+    <section class="card pad">
+      <div class="card-title">A against B</div>
+      <div id="dash-rho" class="big-stat"></div>
+      <canvas id="dash-scatter" width="680" height="520" aria-label="Density of A against B percentiles"></canvas>
+      <div class="axis-note">A percentile ↑ · B percentile →</div>
     </section>
-    <section>
-      <h3>Agreement along the ladder</h3>
+    <section class="card pad">
+      <div class="card-title">Agreement along the ladder</div>
       <div id="dash-agree"></div>
     </section>
   </div>
